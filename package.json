@@ -27,5 +27,11 @@
   "bugs": {
     "url": "https://github.com/linesh-simplicity/frontend-nanodegree-mobile-portfolio/issues"
   },
-  "homepage": "https://github.com/linesh-simplicity/frontend-nanodegree-mobile-portfolio#readme"
+  "homepage": "https://github.com/linesh-simplicity/frontend-nanodegree-mobile-portfolio#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-pagespeed": "^2.0.1",
+    "load-grunt-tasks": "^3.5.2",
+    "ngrok": "^2.2.6"
+  }
 }
