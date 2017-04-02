@@ -6,6 +6,10 @@ let mozjpeg = require('imagemin-mozjpeg')
 module.exports = function (grunt) {
 
    grunt.initConfig({
+      clean: {
+         all: 'dist/'
+      },
+
       imagemin: {
          dynamic: {
             options: {
@@ -68,6 +72,6 @@ module.exports = function (grunt) {
 
    require('load-grunt-tasks')(grunt);
    grunt.registerTask('default', ['build'])
-   grunt.registerTask('build', ['imagemin', 'htmlmin'])
+   grunt.registerTask('build', ['clean', 'imagemin', 'htmlmin'])
    grunt.registerTask('psi', ['build', 'psi-ngrok'])
 }
