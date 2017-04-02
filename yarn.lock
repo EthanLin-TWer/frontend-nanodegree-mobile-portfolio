@@ -1211,6 +1211,14 @@ imagemin-jpegtran@^4.0.0:
     jpegtran-bin "^3.0.0"
     through2 "^2.0.0"
 
+imagemin-mozjpeg@5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/imagemin-mozjpeg/-/imagemin-mozjpeg-5.1.0.tgz#50d3f571d207472433766569b9a8edd359d5e1f2"
+  dependencies:
+    is-jpg "^1.0.0"
+    mozjpeg "^4.0.0"
+    through2 "^0.6.1"
+
 imagemin-optipng@^4.0.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/imagemin-optipng/-/imagemin-optipng-4.3.0.tgz#7604663ab2ee315733274726fd1c374d2b44adb6"
@@ -1826,6 +1834,14 @@ mkdirp@^0.5.0, mkdirp@~0.5.1:
 mkpath@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/mkpath/-/mkpath-0.1.0.tgz#7554a6f8d871834cc97b5462b122c4c124d6de91"
+
+mozjpeg@^4.0.0:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/mozjpeg/-/mozjpeg-4.1.1.tgz#859030b24f689a53db9b40f0160d89195b88fd50"
+  dependencies:
+    bin-build "^2.0.0"
+    bin-wrapper "^3.0.0"
+    logalot "^2.0.0"
 
 multimatch@^2.0.0:
   version "2.1.0"
