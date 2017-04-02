@@ -28,6 +28,11 @@
 	* [ ] 使用构建工具，如 `Grunt` 或 `Gulp` 等
 	* [ ] 必须包含 `package.json`、`src`及`dist`文件夹
 
+## Resources
+
+* https://github.com/gruntjs/grunt-contrib-imagemin
+* https://github.com/imagemin/imagemin-mozjpeg
+
 ---
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
