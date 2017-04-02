@@ -9,12 +9,13 @@
 * PageSpeed score - Critical Rendering Path
 	* [ ] `index.html` 应该在 PageSpeed 的 desktop 评测上获得90以上的得分
 	   * [ ] 压缩 HTML 
-	   * [ ] 压缩 CSS 
+	   * [ ] 压缩 CSS
+	   * [ ] 压缩 JavaScript
+	   * [ ] 压缩图片
 	   * [ ] 网络字体的优化
 	   * [x] 异步加载 `print.css` 
 	   * [x] 将 render blocking CSS 放在页面底端
 	   * [x] 异步加载页面无关的 .js 文件，如 `analytics` 文件 
-	   * [ ] 压缩图片
 	* [ ] `index.html` 应该在 PageSpeed 的 mobile 评测上获得90以上的得分
 * Fps Optimization
 	* [ ] 优化 `views/js/main.js`，使 `views/pizza.html` 在 **滚动时** 能 **稳定** 达到 **`60fps`** 的渲染率
