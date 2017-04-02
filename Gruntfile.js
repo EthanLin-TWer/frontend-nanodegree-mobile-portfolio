@@ -19,7 +19,7 @@ module.exports = function(grunt) {
       options: {
         nokey: true,
         locale: 'en_GB',
-        threshold: 10
+        threshold: 90
       },
       local: {
         options: {
@@ -39,12 +39,12 @@ module.exports = function(grunt) {
     const port = 8080
 
     ngrok.connect(port, (err, url) => {
-      if(err != null) {
+      if(err !== null) {
         grunt.fail.fatal(err)
         return done()
       }
 
-      grunt.config.set('pagespeed.options.url', url) 
+      grunt.config.set('pagespeed.options.url', url)
       grunt.task.run('pagespeed')
       done()
     })
