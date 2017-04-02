@@ -1,5 +1,27 @@
 ## Website Performance Optimization portfolio project
 
+## Tasking
+
+* [x] 环境配置
+	* [x] 配置 `grunt`
+	* [x] 配置 `grunt-pagespeed`
+	* [x] 配置 `ngrok`
+* PageSpeed score - Critical Rendering Path
+	* [ ] `index.html` 应该在 PageSpeed 的 desktop 评测上获得90以上的得分
+	* [ ] `index.html` 应该在 PageSpeed 的 mobile 评测上获得90以上的得分
+* Fps Optimization
+	* [ ] 优化 `views/js/main.js`，使 `views/pizza.html` 在 **滚动时** 能 **稳定** 达到 **`60fps`** 的渲染率
+	* [ ] 优化 `views/pizza.html` 使其 resize 时间小于 `5ms`
+* Styleguide
+	* [ ] 必须有 `README.md`，里面必须包含：
+		* [ ] 安装、运行测试或构建的命令
+		* [ ] 所做的优化和分析
+	* [ ] `views/js/main.js` 中关于 `pizza.html` 的注释必须保存
+	* [ ] 使用构建工具，如 `Grunt` 或 `Gulp` 等
+	* [ ] 必须包含 `package.json`、`src`及`dist`文件夹
+
+---
+
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
 To get started, check out the repository and inspect the code.
