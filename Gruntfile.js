@@ -19,6 +19,18 @@ module.exports = function (grunt) {
          }
       },
 
+      htmlmin: {
+         dist: {
+            options: {
+               removeComments: true,
+               collapseWhitespace: true
+            },
+            files: {
+               'dist/index.html': 'index.html'
+            }
+         }
+      },
+
       pagespeed: {
          options: {
             nokey: true,
@@ -55,5 +67,7 @@ module.exports = function (grunt) {
    })
 
    require('load-grunt-tasks')(grunt);
-   grunt.registerTask('default', ['imagemin', 'psi-ngrok']);
+   grunt.registerTask('default', ['build'])
+   grunt.registerTask('build', ['imagemin', 'htmlmin'])
+   grunt.registerTask('psi', ['build', 'psi-ngrok'])
 }

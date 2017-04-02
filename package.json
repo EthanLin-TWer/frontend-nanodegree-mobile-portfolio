@@ -30,6 +30,7 @@
   "homepage": "https://github.com/linesh-simplicity/frontend-nanodegree-mobile-portfolio#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-contrib-htmlmin": "^2.3.0",
     "grunt-contrib-imagemin": "^1.0.1",
     "grunt-pagespeed": "^2.0.1",
     "imagemin-mozjpeg": "5.0.0",
