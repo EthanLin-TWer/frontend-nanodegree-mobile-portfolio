@@ -11,9 +11,9 @@
 	   * [ ] 压缩 HTML 
 	   * [ ] 压缩 CSS 
 	   * [ ] 网络字体的优化
-	   * [ ] 异步加载 `print.css` 
-	   * [ ] 将 render blocking CSS 放在页面底端
-	   * [ ] 异步加载页面无关的 .js 文件，如 `analytics` 文件 
+	   * [x] 异步加载 `print.css` 
+	   * [x] 将 render blocking CSS 放在页面底端
+	   * [x] 异步加载页面无关的 .js 文件，如 `analytics` 文件 
 	   * [ ] 压缩图片
 	* [ ] `index.html` 应该在 PageSpeed 的 mobile 评测上获得90以上的得分
 * Fps Optimization
