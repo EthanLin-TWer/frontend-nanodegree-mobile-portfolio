@@ -32,6 +32,8 @@
 
 * https://github.com/gruntjs/grunt-contrib-imagemin
 * https://github.com/imagemin/imagemin-mozjpeg
+* https://github.com/gruntjs/grunt-contrib-htmlmin
+* https://github.com/kangax/html-minifier
 * grunt htmlmin vs minify html: http://inspire.blufra.me/html-minifiers-grunt-contrib-htmlmin-vs-grunt-minify-html/
 ---
 
