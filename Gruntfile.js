@@ -7,7 +7,7 @@ module.exports = function (grunt) {
 
    grunt.initConfig({
       clean: {
-         all: 'dist/'
+         all: 'dist'
       },
 
       copy: {
@@ -47,26 +47,28 @@ module.exports = function (grunt) {
             stripBanners: true
          },
          css: {
-            src: ['src/pizza/css/*.css'],
+            src: ['dist/pizza/css/*.css'],
             dest: 'dist/pizza/css/main.css'
          }
       },
 
       cssmin: {
-         prod: {
-            options: {
-               report: 'gzip'
-            },
+         options: {
+            report: 'min'
+         },
+         target: {
             files: [{
-               expand: true,
-               cwd: 'dist/pizza/css',
-               src: 'main.css',
-               dest: 'dist/pizza/css'
-            }, {
                expand: true,
                cwd: 'dist/index/css',
                src: '*.css',
-               dest: 'dist/index/css'
+               dest: 'dist/index/css',
+               ext: '.min.css'
+            }, {
+               expand: true,
+               cwd: 'dist/pizza/css',
+               src: '*.css',
+               dest: 'dist/pizza/css',
+               ext: '.min.css'
             }]
          }
       },
