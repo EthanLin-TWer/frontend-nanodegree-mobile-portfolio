@@ -38,6 +38,14 @@ module.exports = function (grunt) {
                src: ['index/js/*.js', 'pizza/js/*.js'],
                dest: 'dist'
             }]
+         },
+         images: {
+            files: [{
+               expand: true,
+               cwd: 'src',
+               src: '**/*.{png,jpg,jpeg}',
+               dest: 'dist'
+            }]
          }
       },
 
@@ -80,12 +88,12 @@ module.exports = function (grunt) {
             },
             files: [{
                expand: true,
-               cwd: 'src',
+               cwd: 'dist/',
                src: [
                   'index/img/*.{png,jpg}',
                   'pizza/images/*.{png,jpg}'
                ],
-               dest: 'dist/'
+               dest: 'dist'
             }]
          }
       },
