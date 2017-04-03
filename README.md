@@ -29,6 +29,12 @@
 	* [ ] 使用构建工具，如 `Grunt` 或 `Gulp` 等
 	* [ ] 必须包含 `package.json`、`src`及`dist`文件夹
 
+## PageSpeed Insights
+
+![page-speed-result-mobile](./screenshots/pagespeed/mobile.png)
+
+![page-speed-result-desktop](./screenshots/pagespeed/desktop.png)
+
 ## Resources
 
 * https://github.com/gruntjs/grunt-contrib-imagemin
