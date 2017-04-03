@@ -6,9 +6,6 @@ let mozjpeg = require('imagemin-mozjpeg')
 module.exports = function (grunt) {
 
    grunt.initConfig({
-      config: {
-      },
-
       clean: {
          all: 'dist/'
       },
@@ -18,6 +15,11 @@ module.exports = function (grunt) {
             files: [{
                expand: true,
                src: ['*.html'],
+               dest: 'dist'
+            }, {
+               expand: true,
+               cwd: 'src',
+               src: 'pizza/*.html',
                dest: 'dist'
             }]
          },
@@ -33,7 +35,7 @@ module.exports = function (grunt) {
             files: [{
                expand: true,
                cwd: 'src',
-               src: ['index/js/*.js'],
+               src: ['index/js/*.js', 'pizza/js/*.js'],
                dest: 'dist'
             }]
          }
@@ -45,7 +47,7 @@ module.exports = function (grunt) {
             stripBanners: true
          },
          css: {
-            src: ['pizza/css/*.css'],
+            src: ['src/pizza/css/*.css'],
             dest: 'dist/pizza/css/main.css'
          }
       },
@@ -93,8 +95,13 @@ module.exports = function (grunt) {
             options: {
                replacements: [{
                   pattern: /<img .*?\s?src="src\/(.*)/igm,
-                  replacement: (match, path) => {
+                  replacement: (match) => {
                      return match.replace('src="src/', 'src="')
+                  }
+               }, {
+                  pattern: /<a .*?\s?href="src\/(.*)/igm,
+                  replacement: (match) => {
+                     return match.replace('href="src/', 'href="')
                   }
                }]
             }
@@ -102,7 +109,7 @@ module.exports = function (grunt) {
       },
 
       usemin: {
-         html: 'dist/*.html',
+         html: ['dist/*.html', 'dist/**/*.html'],
          options: {
             dest: 'dist'
          }
