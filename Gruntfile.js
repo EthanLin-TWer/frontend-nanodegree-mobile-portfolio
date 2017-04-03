@@ -81,6 +81,20 @@ module.exports = function (grunt) {
          }
       },
 
+      uglify: {
+         options: {
+            preserveComments: false
+         },
+         target: {
+            files: [{
+               expand: true,
+               cwd: 'dist',
+               src: '**/*.js',
+               dest: 'dist'
+            }]
+         }
+      },
+
       imagemin: {
          dynamic: {
             options: {
@@ -177,6 +191,6 @@ module.exports = function (grunt) {
 
    require('load-grunt-tasks')(grunt);
    grunt.registerTask('default', ['build'])
-   grunt.registerTask('build', ['clean', 'copy', 'concat', 'cssmin', 'imagemin', 'string-replace', 'usemin'])
+   grunt.registerTask('build', ['clean', 'copy', 'concat', 'cssmin', 'uglify', 'imagemin', 'string-replace', 'usemin'])
    grunt.registerTask('psi', ['build', 'psi-ngrok'])
 }
