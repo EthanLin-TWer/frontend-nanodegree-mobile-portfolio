@@ -9,8 +9,8 @@
 * PageSpeed score - Critical Rendering Path
 	* [ ] `index.html` 应该在 PageSpeed 的 desktop 评测上获得90以上的得分
 	   * [ ] 压缩 HTML 
-	   * [ ] 压缩 CSS
-	   * [ ] 压缩 JavaScript
+	   * [x] 压缩 CSS
+	   * [x] 压缩 JavaScript
 	   * [x] 压缩图片
 	   * [ ] 网络字体的优化
 	   * [ ] 网络图片的优化
