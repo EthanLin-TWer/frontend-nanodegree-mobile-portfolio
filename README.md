@@ -7,7 +7,7 @@
 	* [x] 配置 `grunt-pagespeed`
 	* [x] 配置 `ngrok`
 * PageSpeed score - Critical Rendering Path
-	* [ ] `index.html` 应该在 PageSpeed 的 desktop 评测上获得90以上的得分
+	* [x] `index.html` 应该在 PageSpeed 的 desktop 评测上获得90以上的得分
 	   * [x] 压缩 HTML 
 	   * [x] 压缩 CSS
 	   * [x] 压缩 JavaScript
@@ -17,7 +17,7 @@
 	   * [x] 异步加载 `print.css` 
 	   * [x] 将 render blocking CSS 放在页面底端
 	   * [x] 异步加载页面无关的 .js 文件，如 `analytics` 文件 
-	* [ ] `index.html` 应该在 PageSpeed 的 mobile 评测上获得90以上的得分
+	* [x] `index.html` 应该在 PageSpeed 的 mobile 评测上获得90以上的得分
 * Fps Optimization
 	* [ ] 优化 `views/js/main.js`，使 `views/pizza.html` 在 **滚动时** 能 **稳定** 达到 **`60fps`** 的渲染率
 	* [ ] 优化 `views/pizza.html` 使其 resize 时间小于 `5ms`
