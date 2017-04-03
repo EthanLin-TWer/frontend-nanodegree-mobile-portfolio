@@ -10,6 +10,31 @@ module.exports = function (grunt) {
          all: 'dist/'
       },
 
+      concat: {
+         options: {
+            removeComments: true,
+            stripBanners: true
+         },
+         css: {
+            src: ['pizza/css/*.css'],
+            dest: 'dist/pizza/css/main.css'
+         }
+      },
+
+      cssmin: {
+         prod: {
+            options: {
+               report: 'gzip'
+            },
+            files: [{
+               expand: true,
+               cwd: 'dist/pizza/css',
+               src: 'main.css',
+               dest: 'dist/pizza/css'
+            }]
+         }
+      },
+
       imagemin: {
          dynamic: {
             options: {
@@ -73,6 +98,6 @@ module.exports = function (grunt) {
 
    require('load-grunt-tasks')(grunt);
    grunt.registerTask('default', ['build'])
-   grunt.registerTask('build', ['clean', 'imagemin', 'htmlmin'])
+   grunt.registerTask('build', ['clean', 'concat', 'cssmin', 'imagemin', 'htmlmin'])
    grunt.registerTask('psi', ['build', 'psi-ngrok'])
 }
