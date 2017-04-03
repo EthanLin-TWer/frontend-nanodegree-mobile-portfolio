@@ -8,7 +8,7 @@
 	* [x] 配置 `ngrok`
 * PageSpeed score - Critical Rendering Path
 	* [ ] `index.html` 应该在 PageSpeed 的 desktop 评测上获得90以上的得分
-	   * [ ] 压缩 HTML 
+	   * [x] 压缩 HTML 
 	   * [x] 压缩 CSS
 	   * [x] 压缩 JavaScript
 	   * [x] 压缩图片
