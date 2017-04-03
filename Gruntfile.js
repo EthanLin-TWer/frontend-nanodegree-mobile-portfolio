@@ -143,14 +143,17 @@ module.exports = function (grunt) {
       },
 
       htmlmin: {
-         dist: {
+         target: {
             options: {
                removeComments: true,
                collapseWhitespace: true
             },
-            files: {
-               'dist/index.html': 'index.html'
-            }
+            files: [{
+               expand: true,
+               cwd: 'dist',
+               src: ['*.html', 'pizza/*.html'],
+               dest: 'dist'
+            }]
          }
       },
 
@@ -191,6 +194,6 @@ module.exports = function (grunt) {
 
    require('load-grunt-tasks')(grunt);
    grunt.registerTask('default', ['build'])
-   grunt.registerTask('build', ['clean', 'copy', 'concat', 'cssmin', 'uglify', 'imagemin', 'string-replace', 'usemin'])
+   grunt.registerTask('build', ['clean', 'copy', 'concat', 'cssmin', 'uglify', 'imagemin', 'string-replace', 'usemin', 'htmlmin'])
    grunt.registerTask('psi', ['build', 'psi-ngrok'])
 }
