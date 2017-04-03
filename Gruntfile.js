@@ -6,8 +6,37 @@ let mozjpeg = require('imagemin-mozjpeg')
 module.exports = function (grunt) {
 
    grunt.initConfig({
+      config: {
+      },
+
       clean: {
          all: 'dist/'
+      },
+
+      copy: {
+         html: {
+            files: [{
+               expand: true,
+               src: ['*.html'],
+               dest: 'dist'
+            }]
+         },
+         css: {
+            files: [{
+               expand: true,
+               cwd: 'src',
+               src: ['index/css/*.css'],
+               dest: 'dist'
+            }]
+         },
+         js: {
+            files: [{
+               expand: true,
+               cwd: 'src',
+               src: ['index/js/*.js'],
+               dest: 'dist'
+            }]
+         }
       },
 
       concat: {
@@ -31,6 +60,11 @@ module.exports = function (grunt) {
                cwd: 'dist/pizza/css',
                src: 'main.css',
                dest: 'dist/pizza/css'
+            }, {
+               expand: true,
+               cwd: 'dist/index/css',
+               src: '*.css',
+               dest: 'dist/index/css'
             }]
          }
       },
@@ -46,6 +80,31 @@ module.exports = function (grunt) {
                src: ['index/img/*.{png,jpg}', 'pizza/images/*.{png,jpg}'],
                dest: 'dist/'
             }]
+         }
+      },
+
+      'string-replace': {
+         prod: {
+            files: [{
+               expand: true,
+               src: ['*.html'],
+               dest: 'dist'
+            }],
+            options: {
+               replacements: [{
+                  pattern: /<img .*?\s?src="src\/(.*)/igm,
+                  replacement: (match, path) => {
+                     return match.replace('src="src/', 'src="')
+                  }
+               }]
+            }
+         }
+      },
+
+      usemin: {
+         html: 'dist/*.html',
+         options: {
+            dest: 'dist'
          }
       },
 
@@ -98,6 +157,6 @@ module.exports = function (grunt) {
 
    require('load-grunt-tasks')(grunt);
    grunt.registerTask('default', ['build'])
-   grunt.registerTask('build', ['clean', 'concat', 'cssmin', 'imagemin', 'htmlmin'])
+   grunt.registerTask('build', ['clean', 'copy', 'concat', 'cssmin', 'imagemin', 'string-replace', 'usemin'])
    grunt.registerTask('psi', ['build', 'psi-ngrok'])
 }
