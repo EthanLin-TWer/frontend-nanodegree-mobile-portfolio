@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+    "build": "grunt build",
     "test": "echo \"good\""
   },
   "repository": {
