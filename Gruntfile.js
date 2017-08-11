@@ -192,7 +192,17 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-critical');
 
   grunt.registerTask('default', [ 'build' ])
-  grunt.registerTask('build', [ 'clean', 'copy', 'concat', 'cssmin', 'uglify', 'imagemin', 'string-replace', 'usemin', 'htmlmin' ])
+  grunt.registerTask('build', [
+    'clean',
+    'copy',
+    'concat',
+    'cssmin',
+    'uglify',
+    'imagemin',
+    'string-replace',
+    'usemin',
+    'htmlmin'
+  ])
   grunt.registerTask('psi', [ 'build', 'psi-ngrok' ])
   grunt.registerTask('build:watch', [ 'build', 'watch:build' ])
   grunt.registerTask('psi:watch', [ 'psi', 'watch:psi' ])
