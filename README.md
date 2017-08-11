@@ -9,15 +9,6 @@
 	* [x] 添加 npm scripts - psi, psi:watch, build, build:watch  
 * PageSpeed score - Critical Rendering Path
 	* [x] `index.html` 应该在 PageSpeed 的 desktop 评测上获得90以上的得分
-	   * [x] 压缩 HTML 
-	   * [x] 压缩 CSS
-	   * [x] 压缩 JavaScript
-	   * [x] 压缩图片
-	   * [x] 网络字体的优化
-	   * [x] 网络图片的优化
-	   * [x] 异步加载 `print.css` 
-	   * [x] 将 render blocking CSS 放在页面底端
-	   * [x] 异步加载页面无关的 .js 文件，如 `analytics` 文件 
 	* [x] `index.html` 应该在 PageSpeed 的 mobile 评测上获得90以上的得分
 * Fps Optimization
 	* [ ] 优化 `views/js/main.js`，使 `views/pizza.html` 在 **滚动时** 能 **稳定** 达到 **`60fps`** 的渲染率
@@ -35,6 +26,36 @@
 ![page-speed-result-mobile](./screenshots/pagespeed/mobile.png)
 
 ![page-speed-result-desktop](./screenshots/pagespeed/desktop.png)
+
+## Critical Rendering Path Optimization Tasking 
+
+* [ ] Minification
+  * [ ] HTML
+  * [ ] CSS
+  * [ ] JavaScript
+  * [ ] Images 
+* [ ] Uglification
+  * [ ] JavaScript
+* [ ] Compress
+  * [ ] GZip HTML
+  * [ ] GZip CSS
+  * [ ] GZip JavaScript
+  * [ ] Images 
+* [ ] Combine critical resource
+  * [ ] CSS
+  * [ ] JavaScript
+* [ ] Defer and asynchronously load non-critical resource
+  * [ ] CSS
+    * [ ] 将 render blocking CSS 放在页面底端
+  * [ ] JavaScript
+* [ ] Cache
+  * [ ] HTML
+  * [ ] CSS
+  * [ ] JavaScript 
+  * [ ] Images
+* [ ] Others
+  * [ ] Optimize online fonts 
+  * [ ] Optimize online images 
 
 ## Resources
 
