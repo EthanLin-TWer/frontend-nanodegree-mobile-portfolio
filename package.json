@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "build": "grunt build",
+    "pagespeed": "grunt psi",
     "test": "echo \"good\""
   },
   "repository": {
