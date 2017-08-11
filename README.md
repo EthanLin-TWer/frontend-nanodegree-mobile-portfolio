@@ -47,9 +47,9 @@
   * [ ] GZip CSS
   * [ ] GZip JavaScript
   * [ ] Images 
-* [ ] Combine critical resource
-  * [ ] CSS
-  * [ ] JavaScript
+* [x] Combine critical resource
+  * [x] CSS - `bootstrap.css` + `style.css` -> `main.min.css`
+  * [x] JavaScript
 * [ ] Defer and asynchronously load non-critical resource
   * [ ] CSS
     * [ ] 将 render blocking CSS 放在页面底端
