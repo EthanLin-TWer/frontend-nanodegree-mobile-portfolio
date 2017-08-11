@@ -29,6 +29,11 @@ module.exports = function (grunt) {
           cwd: 'src',
           src: [ 'index/css/*.css' ],
           dest: 'dist'
+        }, {
+          expand: true,
+          cwd: 'src',
+          src: [ 'pizza/css/*.css' ],
+          dest: 'dist'
         } ]
       },
       js: {
