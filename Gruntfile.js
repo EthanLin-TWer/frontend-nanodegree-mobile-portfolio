@@ -173,6 +173,34 @@ module.exports = function (grunt) {
           strategy: 'mobile'
         }
       }
+    },
+
+    watch: {
+      build: {
+        files: [
+          '*.html',
+          'pizza/*.html',
+          'index/css/*.css',
+          'index/js/*.js',
+          'pizza/js/*.js',
+          'pizza/images/*.{png,jpg}',
+        ],
+        tasks: ['build']
+      },
+      psi: {
+        files: [
+          '*.html',
+          'pizza/*.html',
+          'index/css/*.css',
+          'index/js/*.js',
+          'pizza/js/*.js',
+          'pizza/images/*.{png,jpg}',
+        ],
+        tasks: [
+          'build',
+          'psi-ngrok'
+        ]
+      }
     }
   })
 
@@ -193,7 +221,10 @@ module.exports = function (grunt) {
   })
 
   require('load-grunt-tasks')(grunt);
+
   grunt.registerTask('default', [ 'build' ])
   grunt.registerTask('build', [ 'clean', 'copy', 'concat', 'cssmin', 'uglify', 'imagemin', 'string-replace', 'usemin', 'htmlmin' ])
   grunt.registerTask('psi', [ 'build', 'psi-ngrok' ])
+  grunt.registerTask('build:watch', [ 'build', 'watch:build' ])
+  grunt.registerTask('psi:watch', [ 'psi', 'watch:psi' ])
 }
