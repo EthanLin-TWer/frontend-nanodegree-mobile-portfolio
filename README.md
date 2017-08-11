@@ -35,6 +35,8 @@
     * [x] JS 代码中的注释没移除 - minifyJS: true
     * [x] JS 代码还有换行和空格 - minifyJS: true
   * [ ] CSS
+    * [x] basic minification - cssmin
+    * [ ] `dist/pizza/css/main.min.css` 还有注释
   * [ ] JavaScript
   * [ ] Images 
 * [ ] Uglification
