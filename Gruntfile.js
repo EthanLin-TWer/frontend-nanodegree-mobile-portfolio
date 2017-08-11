@@ -126,6 +126,18 @@ module.exports = function (grunt) {
       }
     },
 
+    critical: {
+      index: {
+        options: {
+          base: './',
+          css: [ 'dist/index/css/style.min.css' ],
+          minify: true
+        },
+        src: 'dist/index.html',
+        dest: 'dist/index.html'
+      }
+    },
+
     htmlmin: {
       target: {
         options: {
@@ -201,6 +213,7 @@ module.exports = function (grunt) {
     'imagemin',
     'string-replace',
     'usemin',
+    'critical',
     'htmlmin'
   ])
   grunt.registerTask('psi', [ 'build', 'psi-ngrok' ])
