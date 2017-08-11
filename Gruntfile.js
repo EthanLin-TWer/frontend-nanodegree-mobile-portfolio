@@ -158,29 +158,12 @@ module.exports = function (grunt) {
 
     watch: {
       build: {
-        files: [
-          '*.html',
-          'pizza/*.html',
-          'index/css/*.css',
-          'index/js/*.js',
-          'pizza/js/*.js',
-          'pizza/images/*.{png,jpg}',
-        ],
+        files: [ 'src/**', '*.html' ],
         tasks: [ 'build' ]
       },
       psi: {
-        files: [
-          '*.html',
-          'pizza/*.html',
-          'index/css/*.css',
-          'index/js/*.js',
-          'pizza/js/*.js',
-          'pizza/images/*.{png,jpg}',
-        ],
-        tasks: [
-          'build',
-          'psi-ngrok'
-        ]
+        files: [ 'src/**', '*.html' ],
+        tasks: [ 'build', 'psi-ngrok' ]
       }
     }
   })
