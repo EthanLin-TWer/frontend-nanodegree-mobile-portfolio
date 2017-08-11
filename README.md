@@ -40,7 +40,6 @@
       * https://stackoverflow.com/questions/27825744/grunt-contrib-cssmin-how-to-remove-comments-from-minified-css
       * https://github.com/jakubpawlowicz/clean-css#how-to-use-clean-css-programmatically
   * [x] JavaScript
-  * [ ] Images 
 * [x] Uglification
   * [x] JavaScript - 只有一些函数名没有 uglify，不过比率非常小，估计不到0.01%。故忽略不计。
 * [ ] Compress
