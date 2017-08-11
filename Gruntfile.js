@@ -34,8 +34,8 @@ module.exports = function (grunt) {
         removeComments: true,
         stripBanners: true
       },
-      css: {
-        src: [ 'dist/pizza/css/*.css' ],
+      cssPizzaStyles: {
+        src: [ 'dist/pizza/css/main/*.css'],
         dest: 'dist/pizza/css/main.css'
       },
       jsIndexVendor: {

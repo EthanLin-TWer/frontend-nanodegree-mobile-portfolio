@@ -64,7 +64,7 @@
   * [ ] JavaScript 
   * [ ] Images
 * [ ] Inline critical and small resources 
-  * [ ] JavaScript 
+  * [x] JavaScript
   * [ ] CSS
     * [ ] organize entries
     * https://github.com/addyosmani/critical
