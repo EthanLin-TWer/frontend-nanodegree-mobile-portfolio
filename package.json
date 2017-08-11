@@ -6,6 +6,7 @@
   "scripts": {
     "build": "grunt build",
     "pagespeed": "grunt psi",
+    "psi": "grunt psi",
     "test": "echo \"good\""
   },
   "repository": {
