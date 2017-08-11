@@ -189,6 +189,7 @@ module.exports = function (grunt) {
   })
 
   require('load-grunt-tasks')(grunt);
+  grunt.loadNpmTasks('grunt-critical');
 
   grunt.registerTask('default', [ 'build' ])
   grunt.registerTask('build', [ 'clean', 'copy', 'concat', 'cssmin', 'uglify', 'imagemin', 'string-replace', 'usemin', 'htmlmin' ])
