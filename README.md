@@ -42,7 +42,7 @@
   * [x] JavaScript
 * [x] Uglification
   * [x] JavaScript - 只有一些函数名没有 uglify，不过比率非常小，估计不到0.01%。故忽略不计。
-* [ ] Compress
+* [ ] Compress - Cannot verify without network connectivity
   * [ ] GZip HTML
   * [ ] GZip CSS
   * [ ] GZip JavaScript
