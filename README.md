@@ -63,6 +63,11 @@
   * [ ] CSS
   * [ ] JavaScript 
   * [ ] Images
+* [ ] Inline critical and small resources 
+  * [ ] JavaScript 
+  * [ ] CSS
+    * https://github.com/addyosmani/critical
+    * https://github.com/bezoerb/grunt-critical
 * [ ] Others
   * [ ] Optimize online fonts 
   * [ ] Optimize online images 
