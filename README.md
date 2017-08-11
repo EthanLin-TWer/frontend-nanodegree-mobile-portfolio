@@ -63,10 +63,10 @@
   * [ ] CSS
   * [ ] JavaScript 
   * [ ] Images
-* [ ] Inline critical and small resources 
+* [x] Inline critical and small resources 
   * [x] JavaScript
-  * [ ] CSS
-    * [ ] organize entries
+  * [x] CSS
+    * [x] organize entries
     * https://github.com/addyosmani/critical
     * https://github.com/bezoerb/grunt-critical
 * [ ] Others
