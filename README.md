@@ -50,10 +50,10 @@
 * [x] Combine critical resource
   * [x] CSS - `bootstrap.css` + `style.css` -> `main.min.css`
   * [x] JavaScript
-* [ ] Defer and asynchronously load non-critical resource
-  * [ ] CSS
-    * [ ] 将 render blocking CSS 放在页面底端
-  * [ ] JavaScript
+* [x] Defer and asynchronously load non-critical resource
+  * [x] CSS
+    * [x] 将 render blocking CSS 放在页面底端
+  * [x] JavaScript
 * [ ] Cache
   * [ ] HTML
   * [ ] CSS
