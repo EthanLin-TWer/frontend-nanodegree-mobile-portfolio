@@ -47,6 +47,7 @@
   * [ ] GZip CSS
   * [ ] GZip JavaScript
   * [ ] Images 
+    * https://developers.google.com/speed/docs/insights/OptimizeImages
 * [x] Combine critical resource
   * [x] CSS - `bootstrap.css` + `style.css` -> `main.min.css`
   * [x] JavaScript
