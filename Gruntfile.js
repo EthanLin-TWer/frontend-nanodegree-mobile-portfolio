@@ -146,7 +146,8 @@ module.exports = function (grunt) {
       target: {
         options: {
           removeComments: true,
-          collapseWhitespace: true
+          collapseWhitespace: true,
+          minifyJS: true
         },
         files: [ {
           expand: true,
