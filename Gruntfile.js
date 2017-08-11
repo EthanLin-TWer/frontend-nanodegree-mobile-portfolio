@@ -34,6 +34,14 @@ module.exports = function (grunt) {
         removeComments: true,
         stripBanners: true
       },
+      cssIndexMainStyles: {
+        src: [ 'dist/index/css/main/*.css' ],
+        dest: 'dist/index/css/main.css'
+      },
+      cssIndexPrintStyles: {
+        src: [ 'dist/index/css/print/*.css' ],
+        dest: 'dist/index/css/print.css'
+      },
       cssPizzaStyles: {
         src: [ 'dist/pizza/css/main/*.css'],
         dest: 'dist/pizza/css/main.css'
@@ -144,7 +152,7 @@ module.exports = function (grunt) {
       // https://github.com/addyosmani/critical/issues/205
       options: {
         base: './',
-        css: [ 'dist/index/css/style.min.css' ],
+        css: [ 'dist/index/css/main.min.css' ],
         minify: true
       },
       index: {
