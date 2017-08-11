@@ -11,44 +11,19 @@ module.exports = function (grunt) {
     },
 
     copy: {
-      html: {
+
+      everythingFromSrcToDist: {
+        files: [ {
+          expand: true,
+          cwd: 'src',
+          src: '**',
+          dest: 'dist'
+        } ]
+      },
+      htmlInRootDirectory: {
         files: [ {
           expand: true,
           src: [ '*.html' ],
-          dest: 'dist'
-        }, {
-          expand: true,
-          cwd: 'src',
-          src: 'pizza/*.html',
-          dest: 'dist'
-        } ]
-      },
-      css: {
-        files: [ {
-          expand: true,
-          cwd: 'src',
-          src: [ 'index/css/*.css' ],
-          dest: 'dist'
-        }, {
-          expand: true,
-          cwd: 'src',
-          src: [ 'pizza/css/*.css' ],
-          dest: 'dist'
-        } ]
-      },
-      js: {
-        files: [ {
-          expand: true,
-          cwd: 'src',
-          src: [ 'index/js/*.js', 'pizza/js/*.js' ],
-          dest: 'dist'
-        } ]
-      },
-      images: {
-        files: [ {
-          expand: true,
-          cwd: 'src',
-          src: '**/*.{png,jpg,jpeg}',
           dest: 'dist'
         } ]
       }
@@ -191,7 +166,7 @@ module.exports = function (grunt) {
           'pizza/js/*.js',
           'pizza/images/*.{png,jpg}',
         ],
-        tasks: ['build']
+        tasks: [ 'build' ]
       },
       psi: {
         files: [
