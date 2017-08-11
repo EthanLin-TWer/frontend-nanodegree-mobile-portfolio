@@ -39,7 +39,7 @@
     * [ ] `dist/pizza/css/main.min.css` 还有注释 - 420 / (420 + 9857) = 4%，不是很多，优先级不高
       * https://stackoverflow.com/questions/27825744/grunt-contrib-cssmin-how-to-remove-comments-from-minified-css
       * https://github.com/jakubpawlowicz/clean-css#how-to-use-clean-css-programmatically
-  * [ ] JavaScript
+  * [x] JavaScript
   * [ ] Images 
 * [ ] Uglification
   * [ ] JavaScript
