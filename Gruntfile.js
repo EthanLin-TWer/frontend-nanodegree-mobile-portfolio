@@ -187,7 +187,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('psi-ngrok', '', function () {
     const done = this.async()
-    const port = 8080
+    const port = 45096
 
     ngrok.connect(port, (err, url) => {
       if (err !== null) {
