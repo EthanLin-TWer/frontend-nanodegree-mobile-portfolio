@@ -6,6 +6,7 @@
 	* [x] 配置 `grunt`
 	* [x] 配置 `grunt-pagespeed`
 	* [x] 配置 `ngrok`
+	* [x] 添加 npm scripts - psi, psi:watch, build, build:watch  
 * PageSpeed score - Critical Rendering Path
 	* [x] `index.html` 应该在 PageSpeed 的 desktop 评测上获得90以上的得分
 	   * [x] 压缩 HTML 
