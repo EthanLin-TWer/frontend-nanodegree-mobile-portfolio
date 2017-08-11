@@ -142,6 +142,18 @@ module.exports = function (grunt) {
         src: 'dist/index.html',
         dest: 'dist/index.html'
       },
+      project2048: {
+        src: 'dist/project-2048.html',
+        dest: 'dist/project-2048.html'
+      },
+      projectMobile: {
+        src: 'dist/project-mobile.html',
+        dest: 'dist/project-mobile.html',
+      },
+      projectWebPerformance: {
+        src: 'dist/project-webperf.html',
+        dest: 'dist/project-webperf.html',
+      }
     },
 
     htmlmin: {
