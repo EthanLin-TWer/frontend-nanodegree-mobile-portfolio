@@ -1,7 +1,7 @@
 'use strict'
 
-let ngrok = require('ngrok')
-let mozjpeg = require('imagemin-mozjpeg')
+const ngrok = require('ngrok')
+const mozjpeg = require('imagemin-mozjpeg')
 
 module.exports = function (grunt) {
 
