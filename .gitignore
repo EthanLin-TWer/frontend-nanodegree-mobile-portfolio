@@ -1,5 +1,8 @@
-# NPM
+## NPM
 node_modules
 
-# IDE
+## IDE
 .idea
+
+## Temporary ignored, updated everytime `grunt build` run
+dist/pizza/images/pizzeria.jpg
