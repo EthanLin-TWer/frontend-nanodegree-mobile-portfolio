@@ -152,24 +152,32 @@ module.exports = function (grunt) {
       // https://github.com/addyosmani/critical/issues/205
       options: {
         base: './',
-        css: [ 'dist/index/css/main.min.css' ],
         minify: true
       },
       index: {
+        css: [ 'dist/index/css/main.min.css' ],
         src: 'dist/index.html',
         dest: 'dist/index.html'
       },
       project2048: {
+        css: [ 'dist/index/css/main.min.css' ],
         src: 'dist/project-2048.html',
         dest: 'dist/project-2048.html'
       },
       projectMobile: {
+        css: [ 'dist/index/css/main.min.css' ],
         src: 'dist/project-mobile.html',
         dest: 'dist/project-mobile.html',
       },
       projectWebPerformance: {
+        css: [ 'dist/index/css/main.min.css' ],
         src: 'dist/project-webperf.html',
         dest: 'dist/project-webperf.html',
+      },
+      pizza: {
+        css: [ 'dist/pizza/css/main.min.css' ],
+        src: 'dist/pizza/pizza.html',
+        dest: 'dist/pizza/pizza.html'
       }
     },
 
