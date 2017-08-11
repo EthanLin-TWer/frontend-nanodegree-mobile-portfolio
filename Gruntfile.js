@@ -54,7 +54,7 @@ module.exports = function (grunt) {
         }, {
           expand: true,
           cwd: 'dist/pizza/css',
-          src: '*.css',
+          src: 'main.css',
           dest: 'dist/pizza/css',
           ext: '.min.css'
         } ]
