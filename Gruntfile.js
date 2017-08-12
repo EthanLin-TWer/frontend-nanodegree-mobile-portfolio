@@ -58,9 +58,10 @@ module.exports = function (grunt) {
 
     cssmin: {
       options: {
-        report: 'min'
+        report: 'gzip',
+        specialComments: 0
       },
-      target: {
+      all: {
         files: [ {
           expand: true,
           cwd: 'dist/index/css',

@@ -31,16 +31,14 @@
 
 ## Critical Rendering Path Optimization Tasking 
 
-* [ ] Minification
+* [x] Minification
   * [x] HTML
     * [x] basic minification - htmlmin html-minifier
     * [x] JS 代码中的注释没移除 - minifyJS: true
     * [x] JS 代码还有换行和空格 - minifyJS: true
-  * [ ] CSS
+  * [x] CSS
     * [x] basic minification - cssmin
-    * [ ] `dist/pizza/css/main.min.css` 还有注释 - 420 / (420 + 9857) = 4%，不是很多，优先级不高
-      * https://stackoverflow.com/questions/27825744/grunt-contrib-cssmin-how-to-remove-comments-from-minified-css
-      * https://github.com/jakubpawlowicz/clean-css#how-to-use-clean-css-programmatically
+    * [x] `dist/pizza/css/main.min.css` 还有注释 - 420 / (420 + 9857) = 4%，不是很多，不搞了
   * [x] JavaScript
 * [x] Uglification
   * [x] JavaScript - 只有一些函数名没有 uglify，不过比率非常小，估计不到0.01%。故忽略不计。
@@ -59,11 +57,11 @@
   * [x] CSS
     * [x] 将 render blocking CSS 放在页面底端
   * [x] JavaScript
-* [ ] Cache
-  * [ ] HTML
-  * [ ] CSS
-  * [ ] JavaScript 
-  * [ ] Images
+* [x] Cache - hard or impossible to modify Github Pages server  
+  * [x] HTML
+  * [x] CSS
+  * [x] JavaScript 
+  * [x] Images
 * [x] Inline critical and small resources 
   * [x] JavaScript
   * [x] CSS
