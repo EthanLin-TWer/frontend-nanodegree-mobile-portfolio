@@ -76,17 +76,6 @@
 * 优化 `views/js/main.js`，使 `views/pizza.html` 在 **滚动时** 能 **稳定** 达到 **`60fps`** 的渲染率
 * 优化 `views/pizza.html` 使其 resize 时间小于 `5ms`
 
-## Resources
-
-* https://github.com/gruntjs/grunt-contrib-imagemin
-* https://github.com/imagemin/imagemin-mozjpeg
-* https://github.com/gruntjs/grunt-contrib-htmlmin
-* https://github.com/kangax/html-minifier
-* grunt htmlmin vs minify html: http://inspire.blufra.me/html-minifiers-grunt-contrib-htmlmin-vs-grunt-minify-html/
-* http://www.cnblogs.com/hubcarl/p/4095122.html
-* https://github.com/yeoman/grunt-usemin
-* https://github.com/gruntjs/grunt-contrib-uglify
-
 ---
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
