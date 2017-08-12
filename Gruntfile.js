@@ -23,7 +23,7 @@ module.exports = function (grunt) {
       htmlInRootDirectory: {
         files: [ {
           expand: true,
-          src: [ '*.html' ],
+          src: [ 'index.html' ],
           dest: 'dist'
         } ]
       }
@@ -131,7 +131,7 @@ module.exports = function (grunt) {
       prod: {
         files: [ {
           expand: true,
-          src: [ '*.html' ],
+          src: [ 'index.html', 'index/*.html' ],
           dest: 'dist'
         } ],
         options: {
@@ -175,18 +175,18 @@ module.exports = function (grunt) {
       },
       project2048: {
         css: [ 'dist/index/css/main.min.css' ],
-        src: 'dist/project-2048.html',
-        dest: 'dist/project-2048.html'
+        src: 'dist/index/project-2048.html',
+        dest: 'dist/index/project-2048.html'
       },
       projectMobile: {
         css: [ 'dist/index/css/main.min.css' ],
-        src: 'dist/project-mobile.html',
-        dest: 'dist/project-mobile.html',
+        src: 'dist/index/project-mobile.html',
+        dest: 'dist/index/project-mobile.html',
       },
       projectWebPerformance: {
         css: [ 'dist/index/css/main.min.css' ],
-        src: 'dist/project-webperf.html',
-        dest: 'dist/project-webperf.html',
+        src: 'dist/index/project-webperf.html',
+        dest: 'dist/index/project-webperf.html',
       },
       pizza: {
         css: [ 'dist/pizza/css/main.min.css' ],
@@ -205,7 +205,7 @@ module.exports = function (grunt) {
         files: [ {
           expand: true,
           cwd: 'dist',
-          src: [ '*.html', 'pizza/*.html' ],
+          src: [ '*.html', 'index/*.html', 'pizza/*.html' ],
           dest: 'dist'
         } ]
       }
@@ -231,11 +231,11 @@ module.exports = function (grunt) {
 
     watch: {
       build: {
-        files: [ 'src/**', '*.html' ],
+        files: [ 'src/**', 'index.html' ],
         tasks: [ 'build' ]
       },
       psi: {
-        files: [ 'src/**', '*.html' ],
+        files: [ 'src/**', 'index.html' ],
         tasks: [ 'build', 'psi-ngrok' ]
       }
     }
