@@ -1,18 +1,13 @@
-## Website Performance Optimization portfolio project
+# Website Performance Optimization portfolio project
 
 ## Tasking
 
-* [x] 环境配置
-	* [x] 配置 `grunt`
-	* [x] 配置 `grunt-pagespeed`
-	* [x] 配置 `ngrok`
-	* [x] 添加 npm scripts - psi, psi:watch, build, build:watch  
 * PageSpeed score - Critical Rendering Path
 	* [x] `index.html` 应该在 PageSpeed 的 desktop 评测上获得90以上的得分
 	* [x] `index.html` 应该在 PageSpeed 的 mobile 评测上获得90以上的得分
 * Fps Optimization
 	* [ ] 优化 `views/js/main.js`，使 `views/pizza.html` 在 **滚动时** 能 **稳定** 达到 **`60fps`** 的渲染率
-	* [ ] 优化 `views/pizza.html` 使其 resize 时间小于 `5ms`
+	* [x] 优化 `views/pizza.html` 使其 resize 时间小于 `5ms`
 * Styleguide
 	* [ ] 必须有 `README.md`，里面必须包含：
 		* [ ] 安装、运行测试或构建的命令
@@ -20,7 +15,7 @@
     	* [ ] Code review 的时候告诉 reviewer，托管在 Github Page 上的服务器响应不快我也没办法啊
     	* [x] 更新更高分的屏幕截图
 	* [ ] `views/js/main.js` 中关于 `pizza.html` 的注释必须保存
-	* [ ] 使用构建工具，如 `Grunt` 或 `Gulp` 等
+	* [x] 使用构建工具，如 `Grunt` 或 `Gulp` 等
 	* [ ] 必须包含 `package.json`、`src`及`dist`文件夹
 
 ## PageSpeed Insights
@@ -31,6 +26,11 @@
 
 ## Critical Rendering Path Optimization Tasking 
 
+* [x] 环境配置
+	* [x] 配置 `grunt`
+	* [x] 配置 `grunt-pagespeed`
+	* [x] 配置 `ngrok`
+    * [x] 添加 npm scripts - psi, psi:watch, build, build:watch  
 * [x] Minification
   * [x] HTML
     * [x] basic minification - htmlmin html-minifier
@@ -70,6 +70,11 @@
   * [ ] Optimize online fonts 
   * [ ] Optimize online images 
   * [ ] Refactor all duplicate configuration? 
+
+## Hitting 60fps 
+
+* 优化 `views/js/main.js`，使 `views/pizza.html` 在 **滚动时** 能 **稳定** 达到 **`60fps`** 的渲染率
+* 优化 `views/pizza.html` 使其 resize 时间小于 `5ms`
 
 ## Resources
 
