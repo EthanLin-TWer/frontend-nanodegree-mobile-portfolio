@@ -18,16 +18,16 @@
 		* [ ] 安装、运行测试或构建的命令
 		* [ ] 所做的优化和分析
     	* [ ] Code review 的时候告诉 reviewer，托管在 Github Page 上的服务器响应不快我也没办法啊
-    	* [ ] 更新更高分的屏幕截图
+    	* [x] 更新更高分的屏幕截图
 	* [ ] `views/js/main.js` 中关于 `pizza.html` 的注释必须保存
 	* [ ] 使用构建工具，如 `Grunt` 或 `Gulp` 等
 	* [ ] 必须包含 `package.json`、`src`及`dist`文件夹
 
 ## PageSpeed Insights
 
-![page-speed-result-mobile](./screenshots/pagespeed/mobile.png)
+![page-speed-result-desktop](./screenshots/pagespeed/index-desktop.png)
 
-![page-speed-result-desktop](./screenshots/pagespeed/desktop.png)
+![page-speed-result-mobile](./screenshots/pagespeed/pizza-mobile.png)
 
 ## Critical Rendering Path Optimization Tasking 
 
