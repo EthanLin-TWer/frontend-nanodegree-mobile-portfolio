@@ -43,7 +43,7 @@ module.exports = function (grunt) {
         dest: 'dist/index/css/print.css'
       },
       cssPizzaStyles: {
-        src: [ 'dist/pizza/css/main/*.css'],
+        src: [ 'dist/pizza/css/main/*.css' ],
         dest: 'dist/pizza/css/main.css'
       },
       jsIndexVendor: {
@@ -80,7 +80,8 @@ module.exports = function (grunt) {
 
     uglify: {
       options: {
-        preserveComments: false
+        preserveComments: false,
+        sourceMap: true
       },
       target: {
         files: [ {
