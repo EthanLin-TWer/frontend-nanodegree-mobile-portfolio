@@ -20,9 +20,9 @@
 
 ## PageSpeed Insights
 
-![page-speed-result-desktop](./screenshots/pagespeed/index-desktop.png)
+![page-speed-result-desktop](./screenshots/pagespeed/desktop.png)
 
-![page-speed-result-mobile](./screenshots/pagespeed/pizza-mobile.png)
+![page-speed-result-mobile](./screenshots/pagespeed/mobile.png)
 
 ## Critical Rendering Path Optimization Tasking 
 
