@@ -36,7 +36,6 @@
     * [x] basic minification - htmlmin html-minifier
     * [x] JS 代码中的注释没移除 - minifyJS: true
     * [x] JS 代码还有换行和空格 - minifyJS: true
-    * https://github.com/kangax/html-minifier/tree/gh-pages
   * [ ] CSS
     * [x] basic minification - cssmin
     * [ ] `dist/pizza/css/main.min.css` 还有注释 - 420 / (420 + 9857) = 4%，不是很多，优先级不高
