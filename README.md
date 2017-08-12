@@ -48,9 +48,10 @@
   * [x] GZip HTML
   * [x] GZip CSS
   * [x] GZip JavaScript
-  * [ ] Images 
-    * [ ] 自动化 - 在 img 标签中指定了 100px 的图片，能够自动压缩成这个比例？
+  * [x] Images 
+    * [x] 自动化 - 在 img 标签中指定了 100px 的图片，能够自动压缩成这个比例？
     * https://developers.google.com/speed/docs/insights/OptimizeImages
+    * https://github.com/excellenteasy/grunt-image-resize
 * [x] Combine critical resource
   * [x] CSS - `bootstrap.css` + `style.css` -> `main.min.css`
   * [x] JavaScript
@@ -67,8 +68,6 @@
   * [x] JavaScript
   * [x] CSS
     * [x] organize entries
-    * https://github.com/addyosmani/critical
-    * https://github.com/bezoerb/grunt-critical
 * [ ] Others
   * [ ] Optimize online fonts 
   * [ ] Optimize online images 

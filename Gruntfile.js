@@ -99,7 +99,9 @@ module.exports = function (grunt) {
     imagemin: {
       dynamic: {
         options: {
-          use: [ mozjpeg({ quality: 60 }) ]
+          use: [
+            mozjpeg({ quality: 60 })
+          ]
         },
         files: [ {
           expand: true,
@@ -110,6 +112,17 @@ module.exports = function (grunt) {
           ],
           dest: 'dist'
         } ]
+      }
+    },
+
+    'imagemagick-resize': {
+      dev: {
+        from: 'dist/pizza/images/',
+        to: 'dist/pizza/images/',
+        files: 'pizzeria.jpg',
+        props: {
+          width: 100
+        }
       }
     },
 
@@ -245,6 +258,7 @@ module.exports = function (grunt) {
 
   require('load-grunt-tasks')(grunt);
   grunt.loadNpmTasks('grunt-critical');
+  grunt.loadNpmTasks('grunt-imagemagick');
 
   grunt.registerTask('default', [ 'build' ])
   grunt.registerTask('build', [
@@ -254,6 +268,7 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'imagemin',
+    'imagemagick-resize',
     'string-replace',
     'usemin',
     'critical',
