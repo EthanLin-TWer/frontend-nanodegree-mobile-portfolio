@@ -13,6 +13,7 @@
   * [x] 必须包含 `src` 及 `dist` 文件夹
   * [x] 如果使用了构建工具，必须包含 `package.json` 和 `Gruntfile.js` 配置文件
   * [x] 不应该提交 `node_modules` 文件夹
+  * [ ] Github 仓库的主分支应该是 master 分支（不知道这个什么意思）
   * [ ] 必须有 `README.md`，里面必须包含：
     * [ ] 安装、运行测试或构建的命令
 	* [ ] 所做的优化和分析
@@ -35,7 +36,7 @@
 
 ---
 
-[作业要求]: https://classroom.udacity.com/nanodegrees/nd001-cn-advanced/parts/a36dd90b-6c42-406f-870e-a1ba80c1f556/modules/3ea60ac9-3675-4528-903f-abee45e41406/lessons/2735848561239847/project
+[作业要求]: https://review.udacity.com/#!/projects/2735848561/rubric
 [Measuring with Navigation Timing]: https://developers.google.com/web/fundamentals/performance/critical-rendering-path/measure-crp.html
 [Optimize images]: https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization.html
 [HTTP caching]: https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching.html
