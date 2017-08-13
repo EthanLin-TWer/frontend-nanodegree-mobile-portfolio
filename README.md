@@ -10,7 +10,8 @@
   * [x] 优化 `views/pizza.html` 使其 resize 时间小于 `5ms`
 * Styleguide
   * [ ] 阅读 [作业要求][] 
-  * [x] 必须包含 `package.json`、`src`及`dist`文件夹
+  * [x] 必须包含 `src` 及 `dist` 文件夹
+  * [x] 如果使用了构建工具，必须包含 `package.json` 和 `Gruntfile.js` 配置文件
   * [ ] 必须有 `README.md`，里面必须包含：
     * [ ] 安装、运行测试或构建的命令
 	* [ ] 所做的优化和分析
