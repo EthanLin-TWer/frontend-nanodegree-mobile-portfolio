@@ -4,7 +4,19 @@
   * scrolling
   * resize pizza
   * anchor jumping(e.g. to `#location`, `#ingredients`, `#randomPizzas`)
-* [ ] fix all scrolling issues
-* [ ] fix all painting issues
-* [ ] fix all resizing issues 
-* [ ] fix all layout issues 
+* [ ] scrolling
+  * [ ] find JavaScript issues 
+  * [ ] find layout issues  
+  * [ ] find painting issues
+  * [ ] find layer composite issues
+* [ ] pizza resize 
+  * [ ] find JavaScript issues 
+  * [ ] find layout issues  
+  * [ ] find painting issues
+  * [ ] find layer composite issues
+* [ ] anchor jumping
+  * [ ] find JavaScript issues 
+  * [ ] find layout issues  
+  * [ ] find painting issues
+  * [ ] find layer composite issues
+  
