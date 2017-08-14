@@ -545,7 +545,7 @@ window.addEventListener('scroll', updatePositions);
  *   <img src="images/pizza.png" class="mover" style="width: 73.333px; height: 100px; top: ..px; left: 256 * 7px;">
  * </div>
  */
-document.addEventListener('DOMContentLoaded', function() {
+function generateBackgroundPizzas() {
   var numberOfPizzasInOneRow = 9;
   var rows = 7;
   var imageBlockSize = 256;
@@ -555,11 +555,13 @@ document.addEventListener('DOMContentLoaded', function() {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
-    elem.style.height = "100px";
-    elem.style.width = "73.333px";
     elem.style.left = (i % numberOfPizzasInOneRow) * imageBlockSize + 'px';
     elem.style.top = (Math.floor(i / numberOfPizzasInOneRow) * imageBlockSize) + 'px';
     document.querySelector("#movingPizzas1").appendChild(elem);
   }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  generateBackgroundPizzas();
   updatePositions();
 });
