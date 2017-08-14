@@ -546,7 +546,7 @@ window.addEventListener('scroll', updatePositions);
  * </div>
  */
 document.addEventListener('DOMContentLoaded', function() {
-  var numberOfPizzasInOneRow = 8;
+  var numberOfPizzasInOneRow = 9;
   var rows = 5;
   var imageBlockSize = 256;
   var totalPizzasToGenerate = numberOfPizzasInOneRow * rows
