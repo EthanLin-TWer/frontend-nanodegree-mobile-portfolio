@@ -14,6 +14,7 @@
 * [ ] scrolling
   * [ ] find JavaScript issues 
     * `updatePositions()` 可能需要优化，但优先级在 painting 和分层问题之后
+    * 是否可以 batch style 的更新
   * [ ] find layout issues  
   * [ ] find painting issues
     * [ ] 确定可用分层
