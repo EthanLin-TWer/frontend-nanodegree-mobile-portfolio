@@ -536,7 +536,15 @@ function updatePositions() {
 // runs updatePositions on scroll
 window.addEventListener('scroll', updatePositions);
 
-// Generates the sliding pizzas when the page loads.
+/**
+ * Generates the sliding pizzas when the page loads. These generates a DOM node under the #movingPizzas1 element:
+ * <div id="movingPizzas1">
+ *   <img src="images/pizza.png" class="mover" style="width: 73.333px; height: 100px; top: ..px">
+ *   <img src="images/pizza.png" class="mover" style="width: 73.333px; height: 100px; top: ..px">
+ *   ...(197 more)
+ *   <img src="images/pizza.png" class="mover" style="width: 73.333px; height: 100px; top: ..px">
+ * </div>
+ */
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
