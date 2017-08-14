@@ -539,23 +539,23 @@ window.addEventListener('scroll', updatePositions);
 /**
  * Generates the sliding pizzas when the page loads. These generates a DOM node under the #movingPizzas1 element:
  * <div id="movingPizzas1">
- *   <img src="images/pizza.png" class="mover" style="width: 73.333px; height: 100px; top: ..px">
- *   <img src="images/pizza.png" class="mover" style="width: 73.333px; height: 100px; top: ..px">
+ *   <img src="images/pizza.png" class="mover" style="width: 73.333px; height: 100px; top: ..px; left: 0px;">
+ *   <img src="images/pizza.png" class="mover" style="width: 73.333px; height: 100px; top: ..px; left: 256px;">
  *   ...(197 more)
- *   <img src="images/pizza.png" class="mover" style="width: 73.333px; height: 100px; top: ..px">
+ *   <img src="images/pizza.png" class="mover" style="width: 73.333px; height: 100px; top: ..px; left: 256 * 7px;">
  * </div>
  */
 document.addEventListener('DOMContentLoaded', function() {
-  var cols = 8;
-  var s = 256;
+  var numberOfPizzasInOneRow = 8;
+  var imageSize = 256;
   for (var i = 0; i < 200; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
     elem.style.height = "100px";
     elem.style.width = "73.333px";
-    elem.basicLeft = (i % cols) * s;
-    elem.style.top = (Math.floor(i / cols) * s) + 'px';
+    elem.style.left = (i % numberOfPizzasInOneRow) * imageSize + 'px';
+    elem.style.top = (Math.floor(i / numberOfPizzasInOneRow) * imageSize) + 'px';
     document.querySelector("#movingPizzas1").appendChild(elem);
   }
   updatePositions();
