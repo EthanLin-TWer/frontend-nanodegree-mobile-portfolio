@@ -42,3 +42,4 @@
   * [ ] Optimize online fonts 
   * [ ] Optimize online images 
   * [ ] Refactor all duplicate configuration? 
+  * [ ] Support component based build watch? 
