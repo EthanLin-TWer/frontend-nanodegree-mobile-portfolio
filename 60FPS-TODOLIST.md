@@ -14,9 +14,4 @@
   * [ ] find layout issues  
   * [ ] find painting issues
   * [ ] find layer composite issues
-* [ ] anchor jumping
-  * [ ] find JavaScript issues 
-  * [ ] find layout issues  
-  * [ ] find painting issues
-  * [ ] find layer composite issues
   
