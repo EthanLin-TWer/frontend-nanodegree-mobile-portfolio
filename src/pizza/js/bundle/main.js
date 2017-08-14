@@ -547,8 +547,11 @@ window.addEventListener('scroll', updatePositions);
  */
 document.addEventListener('DOMContentLoaded', function() {
   var numberOfPizzasInOneRow = 8;
+  var rows = 5;
   var imageBlockSize = 256;
-  for (var i = 0; i < 40; i++) {
+  var totalPizzasToGenerate = numberOfPizzasInOneRow * rows
+
+  for (var i = 0; i < totalPizzasToGenerate; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
