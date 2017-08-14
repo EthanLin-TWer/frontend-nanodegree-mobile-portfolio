@@ -516,10 +516,8 @@ function updatePositions() {
   window.performance.mark("mark_start_frame");
 
   var pizzaImageElements = document.querySelectorAll('.mover');
-  var documentScrollTop = document.body.scrollTop
-
   for (var i = 0; i < pizzaImageElements.length; i++) {
-    var phase = Math.sin((documentScrollTop / 1250) + (i % 5));
+    var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
     pizzaImageElements[i].style.left = pizzaImageElements[i].basicLeft + 100 * phase + 'px';
   }
 
