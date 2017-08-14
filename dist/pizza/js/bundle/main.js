@@ -358,7 +358,20 @@ var makeRandomPizza = function() {
   return pizza;
 };
 
-// returns a DOM element for each pizza
+/**
+ * returns a DOM element for each pizza with following structures:
+ * <div class="randomPizzaContainer" id="pizza${id}" style="width: 33.33%; height: 325px;">
+ *   <div style="width: 35%">
+ *     <img src="images/pizza.png" class="img-responsive">
+ *   </div>
+ *   <div style="width: 65%">
+ *     <h4>${randomName()}</h4>
+ *     <ul>${makeRandomPizza()}</ul>
+ *   </div>
+ * </div>
+ * @param i
+ * @returns {Element|*}
+ */
 var pizzaElementGenerator = function(i) {
   var pizzaContainer,             // contains pizza title, image and list of ingredients
       pizzaImageContainer,        // contains the pizza image
@@ -382,7 +395,6 @@ var pizzaElementGenerator = function(i) {
   pizzaImage.classList.add("img-responsive");
   pizzaImageContainer.appendChild(pizzaImage);
   pizzaContainer.appendChild(pizzaImageContainer);
-
 
   pizzaDescriptionContainer.style.width="65%";
 
@@ -503,10 +515,12 @@ function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
-  var items = document.querySelectorAll('.mover');
-  for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
-    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
+  var pizzaImageElements = document.querySelectorAll('.mover');
+  var documentScrollTop = document.body.scrollTop
+
+  for (var i = 0; i < pizzaImageElements.length; i++) {
+    var phase = Math.sin((documentScrollTop / 1250) + (i % 5));
+    pizzaImageElements[i].style.left = pizzaImageElements[i].basicLeft + 100 * phase + 'px';
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
