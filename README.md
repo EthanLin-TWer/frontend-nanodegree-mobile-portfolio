@@ -16,7 +16,7 @@ This project is built with NPM and Grunt. Follow the steps below to start the pr
 
 ## Critical Rendering Path Optimization
 
-There're a lot of optimizations performed to achieve a better PageSpeed score. I've summarize them [here][] but in short, the optimizations performed in this project is listed in the table below. And all of them are being automated using Grunt. 
+There're a lot of optimizations performed to achieve a better PageSpeed score. I've summarized the best practice [here][CRP best practice] and listed all the performed optimizations below. And all of them are being automated using Grunt. 
 
 | Categories | Optimizations | HTML | CSS | JS | image |
 | :---: | :--- | :---: | :---: | :---: | :---: | 
@@ -28,7 +28,7 @@ There're a lot of optimizations performed to achieve a better PageSpeed score. I
 |                               | uglify | | | ✅ | |
 |                               | compress | ✅ | ✅ | ✅ | ✅ |
 
-Cache optimization seems pretty much out of my scope as the content is hosted in Github Pages and there's nothing I can do about it. But the score still hits 90+ with all those optimization I've done and listed above.  
+Cache optimization seems pretty much out of my scope as the content is hosted in Github Pages and there's nothing I can do about it. But the score still hits 90+ with all those optimization that have been done and listed above.  
 
 ![page-speed-result-desktop](./screenshots/pagespeed/desktop.png)
 
@@ -79,4 +79,4 @@ Cache optimization seems pretty much out of my scope as the content is hosted in
 [index page]: http://linesh.tw/frontend-nanodegree-mobile-portfolio/dist/index.html
 [pizza page]: http://linesh.tw/frontend-nanodegree-mobile-portfolio/dist/pizza/pizza.html
 
-[here]: https://github.com/linesh-simplicity/linesh-simplicity.github.io/issues/159
+[CRP best practice]: https://github.com/linesh-simplicity/linesh-simplicity.github.io/issues/159
