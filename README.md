@@ -1,12 +1,26 @@
 # Website Performance Optimization portfolio project
 
+Udacity's [Front-End Web Developer Nanodegree][]. The task was to optimize a provided website with a number of optimization and performance-related issues so that it achieves a target PageSpeed score and runs at 60 frames per second. 
+
+## Getting Started
+
+Visit [the homepage][index page] and the [pizza page][] here!
+
+This project is built with NPM and Grunt. Follow the steps below to start the project locally and play around:  
+
+1. download the project to your machine by `git clone`
+2. open your terminal and run `npm install` on project root, by doing this make sure you have a global npm installed
+3. run `npm run build:watch` to build latest assets and watch for upcoming changes
+4. open another terminal and run `npm run serve` to start a local dev server on port 8080
+5. open your favorite browser and visit `localhost:8080/dist/index.html`
+
 ## Tasking
 
 * PageSpeed score - Critical Rendering Path
   * [x] `index.html` 应该在 PageSpeed 的 desktop 评测上获得90以上的得分
   * [x] `index.html` 应该在 PageSpeed 的 mobile 评测上获得90以上的得分
 * Hitting 60 fps
-  * [ ] 优化 `views/js/main.js`，使 `views/pizza.html` 在 **滚动时** 能 **稳定** 达到 **`60fps`** 的渲染率
+  * [x] 优化 `views/js/main.js`，使 `views/pizza.html` 在 **滚动时** 能 **稳定** 达到 **`60fps`** 的渲染率
   * [x] 优化 `views/pizza.html` 使其 resize 时间小于 `5ms`
   * [x] 把首页的 pizza 大图弄回来
   * [ ] optimize css import 
@@ -19,7 +33,7 @@
   * [x] Github 仓库的主分支应该是 master 分支（不知道这个什么意思）
   * [x] 如果使用了构建工具，review 的是 `dist` 文件夹里的内容
   * [ ] 必须有 `README.md`，里面必须包含：
-    * [ ] 安装、运行测试或构建的命令
+    * [x] 安装、运行测试或构建的命令
 	* [ ] 所做的优化和分析
     * [ ] Code review 的时候告诉 reviewer，托管在 Github Page 上的服务器响应不快我也没办法啊
     * [x] 更新更高分的屏幕截图
@@ -40,7 +54,11 @@
 
 ---
 
+[Front-End Web Developer Nanodegree]: https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001
 [作业要求]: https://review.udacity.com/#!/projects/2735848561/rubric
 [Measuring with Navigation Timing]: https://developers.google.com/web/fundamentals/performance/critical-rendering-path/measure-crp.html
 [Optimize images]: https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization.html
 [HTTP caching]: https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching.html
+
+[index page]: http://linesh.tw/frontend-nanodegree-mobile-portfolio/dist/index.html
+[pizza page]: http://linesh.tw/frontend-nanodegree-mobile-portfolio/dist/pizza/pizza.html

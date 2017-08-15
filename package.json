@@ -6,6 +6,7 @@
   "scripts": {
     "pagespeed": "grunt psi",
     "build": "grunt build",
+    "serve": "http-server -c-1",
     "psi": "npm run pagespeed",
     "build:watch": "grunt build:watch",
     "psi:watch": "grunt psi:watch"
@@ -47,6 +48,7 @@
     "grunt-pagespeed": "^2.0.1",
     "grunt-string-replace": "^1.3.1",
     "grunt-usemin": "^3.1.1",
+    "http-server": "^0.10.0",
     "imagemin-mozjpeg": "5.0.0",
     "load-grunt-tasks": "^3.5.2",
     "ngrok": "^2.2.6"
