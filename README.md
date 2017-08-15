@@ -7,8 +7,10 @@
   * [x] `index.html` 应该在 PageSpeed 的 mobile 评测上获得90以上的得分
 * Hitting 60 fps
   * [ ] 优化 `views/js/main.js`，使 `views/pizza.html` 在 **滚动时** 能 **稳定** 达到 **`60fps`** 的渲染率
-  * [x] 把首页的 pizza 大图弄回来
   * [x] 优化 `views/pizza.html` 使其 resize 时间小于 `5ms`
+  * [x] 把首页的 pizza 大图弄回来
+  * [ ] optimize css import 
+  * [ ] fill me in
 * Styleguide
   * [x] 阅读 [作业要求][] 
   * [x] 必须包含 `src` 及 `dist` 文件夹
