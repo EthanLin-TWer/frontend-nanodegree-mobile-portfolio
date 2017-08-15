@@ -537,8 +537,8 @@ function updatePositions() {
 window.addEventListener('scroll', updatePositions);
 
 /**
- * Generates the sliding pizzas when the page loads. These generates a DOM node under the #movingPizzas1 element:
- * <div id="movingPizzas1">
+ * Generates the sliding pizzas when the page loads. These generates a DOM node under the #background-pizzas element:
+ * <div id="background-pizzas">
  *   <img src="images/pizza.png" class="mover" style="width: 73.333px; height: 100px; top: ..px; left: 0px;">
  *   <img src="images/pizza.png" class="mover" style="width: 73.333px; height: 100px; top: ..px; left: 256px;">
  *   ...(197 more)
@@ -557,7 +557,7 @@ function generateBackgroundPizzas() {
     elem.src = "images/pizza.png";
     elem.basicLeft = (i % numberOfPizzasInOneRow) * imageBlockSize;
     elem.style.top = (Math.floor(i / numberOfPizzasInOneRow) * imageBlockSize) + 'px';
-    document.querySelector("#movingPizzas1").appendChild(elem);
+    document.querySelector("#background-pizzas").appendChild(elem);
   }
 }
 
