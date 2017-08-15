@@ -551,7 +551,7 @@ function generateBackgroundPizzas() {
   var numberOfPizzasInOneRow = 9;
   var rows = 5;
   var imageBlockSize = 256;
-  var totalPizzasToGenerate = numberOfPizzasInOneRow * rows
+  var totalPizzasToGenerate = numberOfPizzasInOneRow * rows;
 
   for (var i = 0; i < totalPizzasToGenerate; i++) {
     var elem = document.createElement('img');
