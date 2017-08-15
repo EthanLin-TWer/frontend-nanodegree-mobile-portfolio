@@ -814,12 +814,18 @@ form {
   font-weight: 800;
 }
 
+#movingPizzas1 {
+  position: fixed;
+  left: 0;
+  z-index: -1;
+  transform: translateZ(0); /* forced layer creation for performance */
+  will-change: transform;
+}
+
 .mover {
   position: fixed;
   width: 73px;
   height: 100px;
-  z-index: -1;
-  will-change: transform;
 }
 
 .randomPizzaContainer {

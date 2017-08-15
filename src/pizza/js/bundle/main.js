@@ -520,9 +520,7 @@ function updatePositions() {
 
   for (var i = 0; i < pizzaImageElements.length; i++) {
     var phase = Math.sin(top + (i % 5));
-    var left = -pizzaImageElements[i].basicLeft + 1000 * phase + 'px';
-
-    pizzaImageElements[i].style.transform = 'translateX(' + left + ') translateZ(0)'
+    pizzaImageElements[i].style.left = pizzaImageElements[i].basicLeft + 100 * phase + 'px';
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
@@ -549,7 +547,7 @@ window.addEventListener('scroll', updatePositions);
  */
 function generateBackgroundPizzas() {
   var numberOfPizzasInOneRow = 9;
-  var rows = 7;
+  var rows = 5;
   var imageBlockSize = 256;
   var totalPizzasToGenerate = numberOfPizzasInOneRow * rows
 
