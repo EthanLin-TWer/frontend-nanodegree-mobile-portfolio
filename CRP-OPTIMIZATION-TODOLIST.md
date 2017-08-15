@@ -39,8 +39,8 @@
   * [x] CSS
     * [x] organize entries
 * [ ] Others
+  * [x] Optimize online images 
   * [ ] Optimize online fonts 
-  * [ ] Optimize online images 
   * [ ] Refactor all duplicate configuration? 
   * [ ] Support component based build watch? 
   * [ ] optimize css import 
