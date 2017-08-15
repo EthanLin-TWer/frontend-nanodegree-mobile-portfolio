@@ -54,11 +54,10 @@ Cache optimization seems pretty much out of my scope as the content is hosted in
   * [x] 如果使用了构建工具，review 的是 `dist` 文件夹里的内容
   * [ ] 必须有 `README.md`，里面必须包含：
     * [x] 安装、运行测试或构建的命令
-	* [ ] 所做的优化和分析
+	* [ ] 所做的优化、分析、截图
 	  * [x] crp 
 	  * [ ] 60fps
     * [x] Code review 的时候告诉 reviewer，托管在 Github Page 上的服务器响应不快我也没办法啊
-    * [x] 更新更高分的屏幕截图
   * [x] `views/js/main.js` 中关于 `pizza.html` 的注释必须保存 - 我不删
   * [x] 使用构建工具，如 `Grunt` 或 `Gulp` 等
 
