@@ -19,7 +19,7 @@ This project is built with NPM and Grunt. Follow the steps below to start the pr
 There're a lot of optimizations performed to achieve a better PageSpeed score. I've summarized the best practice [here][CRP best practice] and listed all the performed optimizations below. And all of them are being automated using Grunt. 
 
 | Categories | Optimizations | HTML | CSS | JS | image |
-| :---: | :--- | :---: | :---: | :---: | :---: | 
+| :---: | :---: | :---: | :---: | :---: | :---: | 
 | eliminate requests | cache | | | | | 
 |                | inline critical resource | | ✅ | ✅ | | 
 | minimize critical resource path | concat critical resources | | ✅ | ✅ | |
