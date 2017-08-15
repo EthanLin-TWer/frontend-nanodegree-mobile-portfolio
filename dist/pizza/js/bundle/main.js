@@ -520,7 +520,9 @@ function updatePositions() {
 
   for (var i = 0; i < pizzaImageElements.length; i++) {
     var phase = Math.sin((documentBodyScrollTop / 1250) + (i % 5));
-    pizzaImageElements[i].style.left = pizzaImageElements[i].basicLeft + 100 * phase + 'px';
+    var left = -pizzaImageElements[i].basicLeft + 1000 * phase + 'px';
+
+    pizzaImageElements[i].style.transform = 'translateX(' + left + ') translateZ(0)'
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
