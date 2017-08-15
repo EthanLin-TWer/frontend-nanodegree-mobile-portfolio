@@ -78,3 +78,5 @@ Cache optimization seems pretty much out of my scope as the content is hosted in
 
 [index page]: http://linesh.tw/frontend-nanodegree-mobile-portfolio/dist/index.html
 [pizza page]: http://linesh.tw/frontend-nanodegree-mobile-portfolio/dist/pizza/pizza.html
+
+[here]: https://github.com/linesh-simplicity/linesh-simplicity.github.io/issues/159
