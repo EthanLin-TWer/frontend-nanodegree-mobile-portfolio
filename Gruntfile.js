@@ -126,6 +126,14 @@ module.exports = function (grunt) {
           width: 360,
           height: 270
         }
+      },
+      pizzeriaPreview: {
+        from: 'dist/pizza/images/',
+        to: 'dist/pizza/images/',
+        files: 'pizzeria-preview.jpg',
+        props: {
+          width: 100
+        }
       }
     },
 
