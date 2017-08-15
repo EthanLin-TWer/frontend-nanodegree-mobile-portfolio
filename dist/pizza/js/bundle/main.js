@@ -555,8 +555,7 @@ function generateBackgroundPizzas() {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
-    elem.basicLeft = (i % numberOfPizzasInOneRow) * imageBlockSize
-    ;
+    elem.basicLeft = (i % numberOfPizzasInOneRow) * imageBlockSize;
     elem.style.top = (Math.floor(i / numberOfPizzasInOneRow) * imageBlockSize) + 'px';
     document.querySelector("#movingPizzas1").appendChild(elem);
   }
