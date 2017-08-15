@@ -72,8 +72,6 @@ Cache optimization seems pretty much out of my scope as the content is hosted in
 * Hitting 60 fps
   * [x] 优化 `views/js/main.js`，使 `views/pizza.html` 在 **滚动时** 能 **稳定** 达到 **`60fps`** 的渲染率
   * [x] 优化 `views/pizza.html` 使其 resize 时间小于 `5ms`
-  * [ ] optimize css import 
-  * [ ] fill me in
 * Styleguide
   * [x] 阅读 [作业要求][] 
   * [x] 必须包含 `src` 及 `dist` 文件夹
