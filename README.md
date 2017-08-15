@@ -14,6 +14,26 @@ This project is built with NPM and Grunt. Follow the steps below to start the pr
 4. open another terminal and run `npm run serve` to start a local dev server on port 8080
 5. open your favorite browser and visit `localhost:8080/dist/index.html`
 
+## Critical Rendering Path Optimization
+
+There're a lot of optimizations performed to achieve a better PageSpeed score. I've summarize them [here][] but in short, the optimizations performed in this project is listed in the table below. And all of them are being automated using Grunt. 
+
+| Categories | Optimizations | HTML | CSS | JS | image |
+| :---: | :--- | :---: | :---: | :---: | :---: | 
+| eliminate requests | cache | | | | | 
+|                | inline critical resource | | ✅ | ✅ | | 
+| minimize critical resource path | concat critical resources | | ✅ | ✅ | |
+|                   | load non-critical resources asychronously | | ✅ | ✅ | |
+| minimize critical resource size | minify | ✅ | ✅ | ✅ | ✅ |
+|                               | uglify | | | ✅ | |
+|                               | compress | ✅ | ✅ | ✅ | ✅ |
+
+Cache optimization seems pretty much out of my scope as the content is hosted in Github Pages and there's nothing I can do about it. But the score still hits 90+ with all those optimization I've done and listed above.  
+
+![page-speed-result-desktop](./screenshots/pagespeed/desktop.png)
+
+![page-speed-result-mobile](./screenshots/pagespeed/mobile.png)
+
 ## Tasking
 
 * PageSpeed score - Critical Rendering Path
@@ -35,16 +55,13 @@ This project is built with NPM and Grunt. Follow the steps below to start the pr
   * [ ] 必须有 `README.md`，里面必须包含：
     * [x] 安装、运行测试或构建的命令
 	* [ ] 所做的优化和分析
-    * [ ] Code review 的时候告诉 reviewer，托管在 Github Page 上的服务器响应不快我也没办法啊
+	  * [x] crp 
+	  * [ ] 60fps
+    * [x] Code review 的时候告诉 reviewer，托管在 Github Page 上的服务器响应不快我也没办法啊
     * [x] 更新更高分的屏幕截图
   * [x] `views/js/main.js` 中关于 `pizza.html` 的注释必须保存 - 我不删
   * [x] 使用构建工具，如 `Grunt` 或 `Gulp` 等
 
-## PageSpeed Insights - Critical Rendering Path Optimization
-
-![page-speed-result-desktop](./screenshots/pagespeed/desktop.png)
-
-![page-speed-result-mobile](./screenshots/pagespeed/mobile.png)
 
 ### Optimization Tips and Tricks
 
