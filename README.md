@@ -34,6 +34,36 @@ Cache optimization seems pretty much out of my scope as the content is hosted in
 
 ![page-speed-result-mobile](./screenshots/pagespeed/mobile.png)
 
+## Hitting 60 FPS
+
+###### Fps before any fixes 
+
+![without-any-optimizations](./screenshots/60fps/without-any-optimizations.png)
+
+###### After extracting `document.body.scrollTop / 1250` outside of the loop
+
+![optimize-1-extract-document-body-scroll-top](./screenshots/60fps/optimize-1-extract-document-body-scroll-top.png)
+
+###### Reduce generated pizza numbers from 200 to 45
+
+![optimize-2-reduce-generated-pizza-numbers](./screenshots/60fps/optimize-2-reduce-generated-pizza-numbers.png)
+
+###### Use `will-change: transform` on background images 
+
+![optimize-3-mark-images-as-will-change](./screenshots/60fps/optimize-3-mark-images-as-will-change.png)
+
+###### Apply `z-index: -1` on top of background images layer 
+
+![optimize-4-apply-z-index-on-top-of-images-layers](./screenshots/60fps/optimize-4-apply-z-index-on-top-of-images-layer.png)
+
+###### `requestAnimationFrame(updatePosition)` on `scroll` event 
+
+![optimize-5-request-animation-frame](./screenshots/60fps/optimize-5-request-animation-frame.png)
+
+## Resized Pizza
+
+![resized-pizzas](./screenshots/60fps/resized-pizzas.png)
+
 ## Tasking
 
 * PageSpeed score - Critical Rendering Path
@@ -42,7 +72,6 @@ Cache optimization seems pretty much out of my scope as the content is hosted in
 * Hitting 60 fps
   * [x] 优化 `views/js/main.js`，使 `views/pizza.html` 在 **滚动时** 能 **稳定** 达到 **`60fps`** 的渲染率
   * [x] 优化 `views/pizza.html` 使其 resize 时间小于 `5ms`
-  * [x] 把首页的 pizza 大图弄回来
   * [ ] optimize css import 
   * [ ] fill me in
 * Styleguide
@@ -52,15 +81,13 @@ Cache optimization seems pretty much out of my scope as the content is hosted in
   * [x] 不应该提交 `node_modules` 文件夹
   * [x] Github 仓库的主分支应该是 master 分支（不知道这个什么意思）
   * [x] 如果使用了构建工具，review 的是 `dist` 文件夹里的内容
-  * [ ] 必须有 `README.md`，里面必须包含：
+  * [x] 必须有 `README.md`，里面必须包含：
     * [x] 安装、运行测试或构建的命令
-	* [ ] 所做的优化、分析、截图
+	* [x] 所做的优化、分析、截图
 	  * [x] crp 
-	  * [ ] 60fps
-    * [x] Code review 的时候告诉 reviewer，托管在 Github Page 上的服务器响应不快我也没办法啊
+	  * [x] 60fps
   * [x] `views/js/main.js` 中关于 `pizza.html` 的注释必须保存 - 我不删
   * [x] 使用构建工具，如 `Grunt` 或 `Gulp` 等
-
 
 ### Optimization Tips and Tricks
 
