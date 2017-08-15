@@ -516,10 +516,10 @@ function updatePositions() {
   window.performance.mark("mark_start_frame");
 
   var pizzaImageElements = document.querySelectorAll('.mover');
-  var documentBodyScrollTop = document.body.scrollTop
+  var top = document.body.scrollTop / 1250
 
   for (var i = 0; i < pizzaImageElements.length; i++) {
-    var phase = Math.sin((documentBodyScrollTop / 1250) + (i % 5));
+    var phase = Math.sin(top + (i % 5));
     var left = -pizzaImageElements[i].basicLeft + 1000 * phase + 'px';
 
     pizzaImageElements[i].style.transform = 'translateX(' + left + ') translateZ(0)'
