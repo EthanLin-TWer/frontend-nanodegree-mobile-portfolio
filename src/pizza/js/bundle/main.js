@@ -534,7 +534,9 @@ function updatePositions() {
 }
 
 // runs updatePositions on scroll
-window.addEventListener('scroll', updatePositions);
+window.addEventListener('scroll', function() {
+  window.requestAnimationFrame(updatePositions)
+});
 
 /**
  * Generates the sliding pizzas when the page loads. These generates a DOM node under the #background-pizzas element:
