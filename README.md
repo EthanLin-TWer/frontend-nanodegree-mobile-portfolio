@@ -84,6 +84,7 @@ Cache optimization seems pretty much out of my scope as the content is hosted in
 	* [x] 所做的优化、分析、截图
 	  * [x] crp 
 	  * [x] 60fps
+  * [x] 必须通过 JS 风格检查
   * [x] `views/js/main.js` 中关于 `pizza.html` 的注释必须保存 - 我不删
   * [x] 使用构建工具，如 `Grunt` 或 `Gulp` 等
 
