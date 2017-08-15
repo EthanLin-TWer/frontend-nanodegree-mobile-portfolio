@@ -18,6 +18,9 @@
   * [ ] find layout issues  
   * [ ] find painting issues
     * [ ] 确定可用分层
+      * 背景颜色层
+      * 背景图片层
+      * 内容层
     * [ ] profile 优化
   * [ ] find layer composite issues
 * [ ] pizza resize 
