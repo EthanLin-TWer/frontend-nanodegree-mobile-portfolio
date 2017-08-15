@@ -118,12 +118,13 @@ module.exports = function (grunt) {
     },
 
     'imagemagick-resize': {
-      dev: {
+      pizzeria: {
         from: 'dist/pizza/images/',
         to: 'dist/pizza/images/',
         files: 'pizzeria.jpg',
         props: {
-          width: 100
+          width: 360,
+          height: 270
         }
       }
     },
