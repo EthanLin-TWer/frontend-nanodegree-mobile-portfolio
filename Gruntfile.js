@@ -36,6 +36,8 @@ module.exports = function (grunt) {
           line: true
         }
       },
+      // TODO: [Linesh][8/16/17] can we use wildcards here to remove further redundancy?
+      // https://gruntjs.com/configuring-tasks
       css: {
         files: {
           'dist/index/css/main.css': ['dist/index/css/main/*.css'],
