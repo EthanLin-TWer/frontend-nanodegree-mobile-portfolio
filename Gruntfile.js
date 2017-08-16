@@ -8,7 +8,8 @@ module.exports = function (grunt) {
   grunt.initConfig({
     clean: {
       all: 'dist',
-      html: [ 'dist/index.html', 'dist/**/*.html' ]
+      html: [ 'dist/index.html', 'dist/**/*.html' ],
+      css: [ 'dist/**/css' ]
     },
 
     copy: {
@@ -23,6 +24,9 @@ module.exports = function (grunt) {
           { src: 'index.html', dest: 'dist', expand: true },
           { cwd: 'src', src: '**/*.html', dest: 'dist', expand: true }
         ]
+      },
+      css: {
+        files: [ { cwd: 'src', src: '**/css/**', dest: 'dist', expand: true } ]
       }
     },
 
@@ -192,6 +196,10 @@ module.exports = function (grunt) {
         files: [ 'index.html', 'src/**/*.html' ],
         tasks: [ 'clean:html', 'copy:html', 'string-replace', 'usemin', 'critical', 'htmlmin' ]
       },
+      css: {
+        files: 'src/**/css/**/*.css',
+        tasks: [ 'clean:css', 'copy:css', 'concat:css', 'cssmin' ]
+      },
       build: {
         files: [ 'src/**', 'index.html' ],
         tasks: [ 'build' ]
@@ -238,9 +246,9 @@ module.exports = function (grunt) {
     'critical',
     'htmlmin'
   ])
-  grunt.registerTask('build:html', [
-    'build', 'watch:html'
-  ])
+  grunt.registerTask('build:html', [ 'build', 'watch:html' ])
+  grunt.registerTask('build:css', [ 'build', 'watch:css' ])
+
   grunt.registerTask('psi', [ 'build', 'psi-ngrok' ])
   grunt.registerTask('build:watch', [ 'build', 'watch:build' ])
   grunt.registerTask('psi:watch', [ 'psi', 'watch:psi' ])
