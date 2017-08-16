@@ -4,13 +4,13 @@ Udacity's [Front-End Web Developer Nanodegree][]. The task was to optimize a pro
 
 ## Category 目录
 
-* [Getting Started 安装指南](#getting-started)
-* [Critical Rendering Path Optimization 关键渲染路径优化](#critical-rendering-path-optimization)
-* [Hitting 60 FPS 向 60 FPS 进发](#hitting-60-fps)
-* [Resized Pizza 调整 Pizza 大小](#resized-pizza)
-* [Developer Experience 开发者体验](#developer-experience)
-* [Tasking 任务分解](#tasking)
-* [Optimization Tips and Tricks 优化建议与参考资料](#optimization-tips-and-tricks)
+* [Getting Started 安装指南](#getting-started-安装指南)
+* [Critical Rendering Path Optimization 关键渲染路径优化](#critical-rendering-path-optimization-关键渲染路径优化)
+* [Hitting 60 FPS 向 60 FPS 进发](#hitting-60-fps-向-60-fps-进发)
+* [Resized Pizza 调整 Pizza 大小](#resized-pizza-调整-pizza-大小)
+* [Developer Experience 开发者体验](#developer-experience-开发者体验)
+* [Tasking 任务分解](#tasking-任务分解)
+* [Optimization Tips and Tricks 优化建议与参考资料](#optimization-tips-and-tricks-优化建议与参考资料)
 
 ## Getting Started 安装指南
 
