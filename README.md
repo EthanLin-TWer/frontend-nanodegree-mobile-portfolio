@@ -100,6 +100,8 @@ Cache optimization seems pretty much out of my scope as the content is hosted in
 
 ## Developer Experience 开发者体验
 
+
+
 ![html-improvements](./screenshots/developer/html-improvements.png)
 
 ![css-improvements](./screenshots/developer/css-improvements.png)
@@ -110,12 +112,14 @@ Cache optimization seems pretty much out of my scope as the content is hosted in
 
 ## Tasking 任务分解
 
-* [x] 阅读 [作业要求][] 
-* [x] 必须包含 `src` 及 `dist` 文件夹
-* [x] 如果使用了构建工具，必须包含 `package.json` 和 `Gruntfile.js` 配置文件
-* [x] 不应该提交 `node_modules` 文件夹
-* [x] Github 仓库的主分支应该是 master 分支（不知道这个什么意思）
-* [x] 如果使用了构建工具，review 的是 `dist` 文件夹里的内容
+* [x] 阅读 [作业要求][]
+* [x] 须知事项
+  * Github 仓库的主分支应该是 master 分支（不知道这个什么意思）
+  * 如果使用了构建工具，review 的是 `dist` 文件夹里的内容
+* [x] 如果使用了构建工具，则提交规范：
+  * [x] 必须提交 `package.json` 和 `Gruntfile.js` 配置文件
+  * [x] 必须提交 `src` 及 `dist` 文件夹
+  * [x] 不应该提交 `node_modules` 文件夹
 * [x] PageSpeed score - Critical Rendering Path
   * [x] `index.html` 应该在 PageSpeed 的 desktop 评测上获得90以上的得分
   * [x] `index.html` 应该在 PageSpeed 的 mobile 评测上获得90以上的得分
@@ -125,11 +129,10 @@ Cache optimization seems pretty much out of my scope as the content is hosted in
 * [x] 必须有 `README.md`，里面必须包含：
   * [x] 安装、运行测试或构建的命令
   * [x] 所做的优化、分析、截图
-  * [x] crp 
-  * [x] 60fps
-* [x] 必须通过 JS 风格检查
+    * [x] crp 
+    * [x] 60fps
+* [x] 必须通过 JS 风格检查 - 
 * [x] `views/js/main.js` 中关于 `pizza.html` 的注释必须保存 - 我不删
-* [x] 使用构建工具，如 `Grunt` 或 `Gulp` 等
 
 ## Optimization Tips and Tricks 优化建议与参考资料
 
