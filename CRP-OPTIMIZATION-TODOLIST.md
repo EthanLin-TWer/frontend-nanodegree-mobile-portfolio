@@ -41,6 +41,7 @@
 * [ ] Others
   * [x] Optimize online images 
   * [ ] Optimize online fonts 
+  * [ ] Optimize css import 
   * [x] Refactor all duplicate configuration? 
     * [x] Can they auto scan new components with a new folder and similar structure?  - yes most of them, while some cannot: 
       * `concat` task: not able to auto-scan components as now components are hard-coded
@@ -53,4 +54,3 @@
       * images: make sure they are placed under `images/` folder under the component directory root
       * components: make sure they have their own directory under `src`, like `index/` and `pizza/`
     * [x] Support component based build & watch? - not necessary at the moment 
-  * [ ] optimize css import 
