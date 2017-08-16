@@ -115,6 +115,7 @@ module.exports = function (grunt) {
       prod: {
         files: [ {
           expand: true,
+          cwd: 'dist',
           src: [ 'index.html', 'index/*.html' ],
           dest: 'dist'
         } ],
