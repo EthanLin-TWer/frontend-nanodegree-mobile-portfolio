@@ -9,7 +9,9 @@ module.exports = function (grunt) {
     clean: {
       all: 'dist',
       html: [ 'dist/index.html', 'dist/**/*.html' ],
-      css: [ 'dist/**/css' ]
+      css: [ 'dist/**/css' ],
+      js: [ 'dist/**/js' ],
+      images: [ 'dist/**/images' ]
     },
 
     copy: {
@@ -26,7 +28,19 @@ module.exports = function (grunt) {
         ]
       },
       css: {
-        files: [ { cwd: 'src', src: '**/css/**', dest: 'dist', expand: true } ]
+        files: [
+          { cwd: 'src', src: '**/css/**', dest: 'dist', expand: true }
+        ]
+      },
+      js: {
+        files: [
+          { cwd: 'src', src: '**/js/**', dest: 'dist', expand: true }
+        ]
+      },
+      images: {
+        files: [
+          { cwd: 'src', src: '**/images/**', dest: 'dist', expand: true }
+        ]
       }
     },
 
@@ -200,6 +214,14 @@ module.exports = function (grunt) {
         files: 'src/**/css/**/*.css',
         tasks: [ 'clean:css', 'copy:css', 'concat:css', 'cssmin' ]
       },
+      js: {
+        files: 'src/**/js/**/*.js',
+        tasks: [ 'clean:js', 'copy:js', 'concat:js', 'uglify' ]
+      },
+      images: {
+        files: 'src/**/images/*.{jpg.png}',
+        tasks: [ 'clean:images', 'copy:images', 'imagemin', 'image-resize' ]
+      },
       build: {
         files: [ 'src/**', 'index.html' ],
         tasks: [ 'build' ]
@@ -248,6 +270,8 @@ module.exports = function (grunt) {
   ])
   grunt.registerTask('build:html', [ 'build', 'watch:html' ])
   grunt.registerTask('build:css', [ 'build', 'watch:css' ])
+  grunt.registerTask('build:js', [ 'build', 'watch:js' ])
+  grunt.registerTask('build:images', [ 'build', 'watch:images' ])
 
   grunt.registerTask('psi', [ 'build', 'psi-ngrok' ])
   grunt.registerTask('build:watch', [ 'build', 'watch:build' ])
