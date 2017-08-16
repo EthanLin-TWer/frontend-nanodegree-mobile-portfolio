@@ -7,24 +7,22 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     clean: {
-      all: 'dist'
+      all: 'dist',
+      html: [ 'dist/index.html', 'dist/**/*.html' ]
     },
 
     copy: {
-      everythingFromSrcToDist: {
-        files: [ {
-          expand: true,
-          cwd: 'src',
-          src: '**',
-          dest: 'dist'
-        } ]
+      everything: {
+        files: [
+          { src: 'index.html', dest: 'dist', expand: true },
+          { cwd: 'src', src: '**', dest: 'dist', expand: true }
+        ]
       },
-      rootIndexHTML: {
-        files: [ {
-          expand: true,
-          src: [ 'index.html' ],
-          dest: 'dist'
-        } ]
+      html: {
+        files: [
+          { src: 'index.html', dest: 'dist', expand: true },
+          { cwd: 'src', src: '**/*.html', dest: 'dist', expand: true }
+        ]
       }
     },
 
@@ -190,6 +188,10 @@ module.exports = function (grunt) {
     },
 
     watch: {
+      html: {
+        files: [ 'index.html', 'src/**/*.html' ],
+        tasks: [ 'clean:html', 'copy:html', 'string-replace', 'usemin', 'critical', 'htmlmin' ]
+      },
       build: {
         files: [ 'src/**', 'index.html' ],
         tasks: [ 'build' ]
@@ -224,8 +226,8 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [ 'build' ])
   grunt.registerTask('build', [
-    'clean',
-    'copy',
+    'clean:all',
+    'copy:everything',
     'concat',
     'cssmin',
     'uglify',
@@ -235,6 +237,9 @@ module.exports = function (grunt) {
     'usemin',
     'critical',
     'htmlmin'
+  ])
+  grunt.registerTask('build:html', [
+    'build', 'watch:html'
   ])
   grunt.registerTask('psi', [ 'build', 'psi-ngrok' ])
   grunt.registerTask('build:watch', [ 'build', 'watch:build' ])
