@@ -31,7 +31,10 @@ module.exports = function (grunt) {
     concat: {
       options: {
         removeComments: true,
-        stripBanners: true
+        stripBanners: {
+          block: true,
+          line: true
+        }
       },
       cssIndexMainStyles: {
         src: [ 'dist/index/css/main/*.css' ],
