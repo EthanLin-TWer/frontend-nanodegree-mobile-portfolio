@@ -148,8 +148,8 @@ module.exports = function (grunt) {
       },
       index: {
         css: [ 'dist/index/css/main.min.css' ],
-        src: ['dist/index.html', 'dist/index/*.html'],
-        dest: ''
+        src: [ 'dist/index.html', 'dist/index/*.html' ],
+        dest: '' // which indicates to override origin files
       },
       pizza: {
         css: [ 'dist/pizza/css/main.min.css' ],
