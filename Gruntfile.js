@@ -20,7 +20,7 @@ module.exports = function (grunt) {
           dest: 'dist'
         } ]
       },
-      htmlInRootDirectory: {
+      rootIndexHTML: {
         files: [ {
           expand: true,
           src: [ 'index.html' ],
