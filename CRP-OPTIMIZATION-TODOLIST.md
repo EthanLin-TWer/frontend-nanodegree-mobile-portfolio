@@ -42,5 +42,7 @@
   * [x] Optimize online images 
   * [ ] Optimize online fonts 
   * [ ] Refactor all duplicate configuration? 
-  * [ ] Support component based build watch? 
+    * [ ] Can they auto scan new components with a new folder and similar structure? 
+    * [ ] Can they auto scan files? 
+    * [ ] Support component based build & watch? 
   * [ ] optimize css import 
