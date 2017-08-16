@@ -54,8 +54,6 @@ module.exports = function (grunt) {
           line: true
         }
       },
-      // TODO: [Linesh][8/16/17] can we use wildcards here to remove further redundancy?
-      // https://gruntjs.com/configuring-tasks
       css: {
         files: {
           'dist/index/css/main.css': ['dist/index/css/main/*.css'],
@@ -109,7 +107,6 @@ module.exports = function (grunt) {
     },
 
     'imagemagick-resize': {
-      // TODO: [Linesh][8/16/17] extract 'dist', 'dist/pizza' component path to constants
       pizzeria: {
         from: 'dist/pizza/images/',
         to: 'dist/pizza/images/',
@@ -148,7 +145,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // TODO: [Linesh][8/16/17] Any other solutions regarding the usemin task?
     usemin: {
       html: [
         'dist/index.html',
