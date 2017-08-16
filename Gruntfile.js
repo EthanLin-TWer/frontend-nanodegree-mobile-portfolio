@@ -112,25 +112,20 @@ module.exports = function (grunt) {
     },
 
     'string-replace': {
-      prod: {
-        files: [ {
-          expand: true,
-          cwd: 'dist',
-          src: [ 'index.html', 'index/*.html' ],
-          dest: 'dist'
-        } ],
+      rootIndexHTMLRelativeResourceLocation: {
+        files: {
+          'dist/index.html': 'dist/index.html'
+        },
         options: {
-          replacements: [ {
-            pattern: /<img .*?\s?src="src\/(.*)/igm,
-            replacement: (match) => {
-              return match.replace('src="src/', 'src="')
+          replacements: [
+            {
+              pattern: /<img .*?\s?src="src\/(.*)/igm,
+              replacement: (matched) => matched.replace('src="src/', 'src="')
+            }, {
+              pattern: /<a .*?\s?href="src\/(.*)/igm,
+              replacement: (matched) => matched.replace('href="src/', 'href="')
             }
-          }, {
-            pattern: /<a .*?\s?href="src\/(.*)/igm,
-            replacement: (match) => {
-              return match.replace('href="src/', 'href="')
-            }
-          } ]
+          ]
         }
       }
     },
