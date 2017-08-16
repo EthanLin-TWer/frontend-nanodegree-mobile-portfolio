@@ -132,7 +132,10 @@ module.exports = function (grunt) {
 
     // TODO: [Linesh][8/16/17] Any other solutions regarding the usemin task?
     usemin: {
-      html: [ 'dist/*.html', 'dist/**/*.html' ],
+      html: [
+        'dist/index.html',
+        'dist/**/*.html'
+      ],
       options: {
         dest: 'dist'
       }
