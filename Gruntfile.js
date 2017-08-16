@@ -88,7 +88,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: 'dist/',
           src: [
-            'index/img/*.{png,jpg}',
+            'index/images/*.{png,jpg}',
             'pizza/images/*.{png,jpg}'
           ],
           dest: 'dist'
