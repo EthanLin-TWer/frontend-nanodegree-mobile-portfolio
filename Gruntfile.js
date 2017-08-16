@@ -142,40 +142,19 @@ module.exports = function (grunt) {
     },
 
     critical: {
-      // critical does not support multiple src files right now(and probably forever)
-      // Drawback here is that a section should be added each time a html is added, not SRP
-      // See:
-      // https://github.com/addyosmani/critical/issues/38
-      // https://github.com/addyosmani/critical/issues/111
-      // https://github.com/addyosmani/critical/issues/205
       options: {
         base: './',
         minify: true
       },
       index: {
         css: [ 'dist/index/css/main.min.css' ],
-        src: 'dist/index.html',
-        dest: 'dist/index.html'
-      },
-      project2048: {
-        css: [ 'dist/index/css/main.min.css' ],
-        src: 'dist/index/project-2048.html',
-        dest: 'dist/index/project-2048.html'
-      },
-      projectMobile: {
-        css: [ 'dist/index/css/main.min.css' ],
-        src: 'dist/index/project-mobile.html',
-        dest: 'dist/index/project-mobile.html',
-      },
-      projectWebPerformance: {
-        css: [ 'dist/index/css/main.min.css' ],
-        src: 'dist/index/project-webperf.html',
-        dest: 'dist/index/project-webperf.html',
+        src: ['dist/index.html', 'dist/index/*.html'],
+        dest: ''
       },
       pizza: {
         css: [ 'dist/pizza/css/main.min.css' ],
-        src: 'dist/pizza/pizza.html',
-        dest: 'dist/pizza/pizza.html'
+        src: 'dist/pizza/*.html',
+        dest: ''
       }
     },
 
