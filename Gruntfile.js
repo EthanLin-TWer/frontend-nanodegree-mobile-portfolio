@@ -84,15 +84,9 @@ module.exports = function (grunt) {
             mozjpeg({ quality: 60 })
           ]
         },
-        files: [ {
-          expand: true,
-          cwd: 'dist/',
-          src: [
-            'index/images/*.{png,jpg}',
-            'pizza/images/*.{png,jpg}'
-          ],
-          dest: 'dist'
-        } ]
+        files: [
+          { cwd: 'dist/', src: '**/images/*.{png,jpg}', dest: 'dist', expand: true }
+        ]
       }
     },
 
