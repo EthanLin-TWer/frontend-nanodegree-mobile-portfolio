@@ -80,17 +80,10 @@ module.exports = function (grunt) {
         sourceMap: true
       },
       target: {
-        files: [ {
-          expand: true,
-          cwd: 'dist',
-          src: '**/vendor.js',
-          dest: 'dist'
-        }, {
-          expand: true,
-          cwd: 'dist',
-          src: '**/bundle.js',
-          dest: 'dist'
-        } ]
+        files: [
+          { expand: true, cwd: 'dist', src: '**/vendor.js', dest: 'dist' },
+          { expand: true, cwd: 'dist', src: '**/bundle.js', dest: 'dist' }
+        ]
       }
     },
 
