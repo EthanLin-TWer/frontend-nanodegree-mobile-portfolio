@@ -78,7 +78,7 @@ module.exports = function (grunt) {
     },
 
     imagemin: {
-      dynamic: {
+      all: {
         options: {
           use: [
             mozjpeg({ quality: 60 })
