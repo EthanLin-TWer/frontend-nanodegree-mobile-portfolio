@@ -165,12 +165,9 @@ module.exports = function (grunt) {
           collapseWhitespace: true,
           minifyJS: true
         },
-        files: [ {
-          expand: true,
-          cwd: 'dist',
-          src: [ '*.html', 'index/*.html', 'pizza/*.html' ],
-          dest: 'dist'
-        } ]
+        files: [
+          { cwd: 'dist', src: [ 'index.html', '**/*.html' ], dest: 'dist', expand: true }
+        ]
       }
     },
 
