@@ -57,20 +57,10 @@ module.exports = function (grunt) {
       options: {
         report: 'gzip'
       },
-      all: {
-        files: [ {
-          expand: true,
-          cwd: 'dist/index/css',
-          src: '*.css',
-          dest: 'dist/index/css',
-          ext: '.min.css'
-        }, {
-          expand: true,
-          cwd: 'dist/pizza/css',
-          src: 'main.css',
-          dest: 'dist/pizza/css',
-          ext: '.min.css'
-        } ]
+      allComponents: {
+        files: [
+          { cwd: 'dist', src: '**/css/*.css', dest: 'dist', ext: '.min.css', expand: true }
+        ]
       }
     },
 
@@ -81,8 +71,8 @@ module.exports = function (grunt) {
       },
       target: {
         files: [
-          { expand: true, cwd: 'dist', src: '**/vendor.js', dest: 'dist' },
-          { expand: true, cwd: 'dist', src: '**/bundle.js', dest: 'dist' }
+          { cwd: 'dist', src: '**/vendor.js', dest: 'dist', expand: true },
+          { cwd: 'dist', src: '**/bundle.js', dest: 'dist', expand: true }
         ]
       }
     },
