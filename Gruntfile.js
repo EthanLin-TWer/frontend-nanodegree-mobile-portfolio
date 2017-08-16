@@ -36,17 +36,12 @@ module.exports = function (grunt) {
           line: true
         }
       },
-      cssIndexMainStyles: {
-        src: [ 'dist/index/css/main/*.css' ],
-        dest: 'dist/index/css/main.css'
-      },
-      cssIndexPrintStyles: {
-        src: [ 'dist/index/css/print/*.css' ],
-        dest: 'dist/index/css/print.css'
-      },
-      cssPizzaStyles: {
-        src: [ 'dist/pizza/css/main/*.css' ],
-        dest: 'dist/pizza/css/main.css'
+      css: {
+        files: {
+          'dist/index/css/main.css': ['dist/index/css/main/*.css'],
+          'dist/index/css/print.css': ['dist/index/css/print/*.css'],
+          'dist/pizza/css/main.css': ['dist/pizza/css/main/*.css'],
+        }
       },
       jsIndexVendor: {
         src: [ 'dist/index/js/vendor/*.js' ],
