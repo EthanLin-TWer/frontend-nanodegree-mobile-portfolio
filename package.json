@@ -8,8 +8,8 @@
     "psi": "npm run pagespeed",
     "lint": "eslint ./src/**/*.js",
     "build": "grunt build",
-    "serve": "http-server -c-1",
-    "build:watch": "grunt build:watch"
+    "build:watch": "grunt build:watch",
+    "serve": "http-server -c-1"
   },
   "repository": {
     "type": "git",
