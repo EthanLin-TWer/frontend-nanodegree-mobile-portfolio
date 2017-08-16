@@ -244,7 +244,6 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
   grunt.loadNpmTasks('grunt-critical');
   grunt.loadNpmTasks('grunt-imagemagick');
-  grunt.registerTask('psi-ngrok', '', psiNgrok)
 
   grunt.registerTask('default', [ 'build' ])
   grunt.registerTask('build', [
@@ -260,6 +259,7 @@ module.exports = function (grunt) {
     'critical',
     'htmlmin'
   ])
-  grunt.registerTask('psi', [ 'build', 'psi-ngrok' ])
   grunt.registerTask('build:watch', [ 'build', 'watch' ])
+  grunt.registerTask('psi-ngrok', '', psiNgrok)
+  grunt.registerTask('psi', [ 'build', 'psi-ngrok' ])
 }
