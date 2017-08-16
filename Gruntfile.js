@@ -201,7 +201,7 @@ module.exports = function (grunt) {
     }
   })
 
-  grunt.registerTask('psi-ngrok', '', function () {
+  function psiNgrok() {
     const done = this.async()
     const port = 45096
 
@@ -215,11 +215,12 @@ module.exports = function (grunt) {
       grunt.task.run('pagespeed')
       done()
     })
-  })
+  }
 
   require('load-grunt-tasks')(grunt);
   grunt.loadNpmTasks('grunt-critical');
   grunt.loadNpmTasks('grunt-imagemagick');
+  grunt.registerTask('psi-ngrok', '', psiNgrok)
 
   grunt.registerTask('default', [ 'build' ])
   grunt.registerTask('build', [
