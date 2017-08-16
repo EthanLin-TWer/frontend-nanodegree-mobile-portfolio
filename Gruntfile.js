@@ -43,13 +43,11 @@ module.exports = function (grunt) {
           'dist/pizza/css/main.css': ['dist/pizza/css/main/*.css'],
         }
       },
-      jsIndexVendor: {
-        src: [ 'dist/index/js/vendor/*.js' ],
-        dest: 'dist/index/js/vendor.js'
-      },
-      jsPizzaBundle: {
-        src: [ 'dist/pizza/js/bundle/*.js' ],
-        dest: 'dist/pizza/js/bundle.js'
+      js: {
+        files: {
+          'dist/pizza/js/bundle.js': ['dist/pizza/js/bundle/*.js'],
+          'dist/index/js/vendor.js': ['dist/index/js/vendor/*.js']
+        }
       }
     },
 
