@@ -41,8 +41,16 @@
 * [ ] Others
   * [x] Optimize online images 
   * [ ] Optimize online fonts 
-  * [ ] Refactor all duplicate configuration? 
-    * [ ] Can they auto scan new components with a new folder and similar structure? 
-    * [ ] Can they auto scan files? 
-    * [ ] Support component based build & watch? 
+  * [x] Refactor all duplicate configuration? 
+    * [x] Can they auto scan new components with a new folder and similar structure?  - yes most of them, while some cannot: 
+      * `concat` task: not able to auto-scan components as now components are hard-coded
+      * `imagemagick-resize` task: images path can only be hardcoded as they need unique size while resizing
+      * `critical` task: hardcoded due to lack of support of the plugin
+    * [x] Can they auto scan files?  - yes, as long as they're following project naming/structure conventions like: 
+      * js files: make sure they are categorized and placed under `vendor/` or `bundle/` directory
+      * css files: make sure they are categorized and placed under different directories like `main/` or `print/`
+      * html files: make sure they are placed under the component directory root
+      * images: make sure they are placed under `images/` folder under the component directory root
+      * components: make sure they have their own directory under `src`, like `index/` and `pizza/`
+    * [x] Support component based build & watch? - not necessary at the moment 
   * [ ] optimize css import 

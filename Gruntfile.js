@@ -210,19 +210,19 @@ module.exports = function (grunt) {
     watch: {
       html: {
         files: [ 'index.html', 'src/**/*.html' ],
-        tasks: [ 'clean:html', 'copy:html', 'string-replace', 'usemin', 'critical', 'htmlmin' ]
+        tasks: [ 'build:html' ]
       },
       css: {
         files: 'src/**/css/**/*.css',
-        tasks: [ 'clean:css', 'copy:css', 'concat:css', 'cssmin' ]
+        tasks: [ 'build:css' ]
       },
       js: {
         files: 'src/**/js/**/*.js',
-        tasks: [ 'clean:js', 'copy:js', 'concat:js', 'uglify' ]
+        tasks: [ 'build:js' ]
       },
       images: {
         files: 'src/**/images/*.{jpg.png}',
-        tasks: [ 'clean:images', 'copy:images', 'imagemin', 'image-resize' ]
+        tasks: [ 'build:images' ]
       }
     }
   })
@@ -248,20 +248,13 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-imagemagick');
 
   grunt.registerTask('default', [ 'build' ])
-  grunt.registerTask('build', [
-    'clean:all',
-    'copy:everything',
-    'concat',
-    'cssmin',
-    'uglify',
-    'imagemin',
-    'imagemagick-resize',
-    'string-replace',
-    'usemin',
-    'critical',
-    'htmlmin'
-  ])
+  grunt.registerTask('build:html', [ 'clean:html', 'copy:html', 'string-replace', 'usemin', 'critical', 'htmlmin' ])
+  grunt.registerTask('build:css', [ 'clean:css', 'copy:css', 'concat:css', 'cssmin' ])
+  grunt.registerTask('build:js', [ 'clean:js', 'copy:js', 'concat:js', 'uglify' ])
+  grunt.registerTask('build:images', [ 'clean:images', 'copy:images', 'imagemin', 'imagemagick-resize' ])
+  grunt.registerTask('build', [ 'build:html', 'build:css', 'build:js', 'build:images' ])
   grunt.registerTask('build:watch', [ 'build', 'watch' ])
+
   grunt.registerTask('psi-ngrok', '', psiNgrok)
   grunt.registerTask('psi', [ 'build', 'psi-ngrok' ])
 }
