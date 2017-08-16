@@ -1,9 +1,11 @@
 'use strict'
 
+const timeGrunt = require('time-grunt')
 const ngrok = require('ngrok')
 const mozjpeg = require('imagemin-mozjpeg')
 
 module.exports = function (grunt) {
+  timeGrunt(grunt)
 
   grunt.initConfig({
     clean: {

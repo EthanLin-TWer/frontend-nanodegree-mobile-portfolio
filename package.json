@@ -54,6 +54,7 @@
     "http-server": "^0.10.0",
     "imagemin-mozjpeg": "5.0.0",
     "load-grunt-tasks": "^3.5.2",
-    "ngrok": "^2.2.6"
+    "ngrok": "^2.2.6",
+    "time-grunt": "^1.4.0"
   }
 }
