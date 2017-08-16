@@ -9,8 +9,7 @@
     "build": "grunt build",
     "serve": "http-server -c-1",
     "psi": "npm run pagespeed",
-    "build:watch": "grunt build:watch",
-    "psi:watch": "grunt psi:watch"
+    "build:watch": "grunt build:watch"
   },
   "repository": {
     "type": "git",

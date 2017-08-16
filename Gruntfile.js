@@ -221,14 +221,6 @@ module.exports = function (grunt) {
       images: {
         files: 'src/**/images/*.{jpg.png}',
         tasks: [ 'clean:images', 'copy:images', 'imagemin', 'image-resize' ]
-      },
-      build: {
-        files: [ 'src/**', 'index.html' ],
-        tasks: [ 'build' ]
-      },
-      psi: {
-        files: [ 'src/**', 'index.html' ],
-        tasks: [ 'build', 'psi-ngrok' ]
       }
     }
   })
@@ -268,12 +260,6 @@ module.exports = function (grunt) {
     'critical',
     'htmlmin'
   ])
-  grunt.registerTask('build:html', [ 'build', 'watch:html' ])
-  grunt.registerTask('build:css', [ 'build', 'watch:css' ])
-  grunt.registerTask('build:js', [ 'build', 'watch:js' ])
-  grunt.registerTask('build:images', [ 'build', 'watch:images' ])
-
   grunt.registerTask('psi', [ 'build', 'psi-ngrok' ])
-  grunt.registerTask('build:watch', [ 'build', 'watch:build' ])
-  grunt.registerTask('psi:watch', [ 'psi', 'watch:psi' ])
+  grunt.registerTask('build:watch', [ 'build', 'watch' ])
 }
