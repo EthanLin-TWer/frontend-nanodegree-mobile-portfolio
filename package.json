@@ -5,10 +5,10 @@
   "main": "index.html",
   "scripts": {
     "pagespeed": "grunt psi",
+    "psi": "npm run pagespeed",
     "lint": "eslint ./src/**/*.js",
     "build": "grunt build",
     "serve": "http-server -c-1",
-    "psi": "npm run pagespeed",
     "build:watch": "grunt build:watch"
   },
   "repository": {
