@@ -11,7 +11,6 @@ module.exports = function (grunt) {
     },
 
     copy: {
-
       everythingFromSrcToDist: {
         files: [ {
           expand: true,
@@ -58,8 +57,7 @@ module.exports = function (grunt) {
 
     cssmin: {
       options: {
-        report: 'gzip',
-        specialComments: 0
+        report: 'gzip'
       },
       all: {
         files: [ {
